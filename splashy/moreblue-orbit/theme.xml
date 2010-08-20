@@ -43,9 +43,9 @@
         Remember that the max value is 255 and the minumun value is 0-->
         <background>
             <color>
-                <red>95</red>
-                <green>146</green>
-                <blue>201</blue>
+                <red>138</red>
+                <green>124</green>
+                <blue>119</blue>
                 <alpha>255</alpha>
             </color>
         </background>
