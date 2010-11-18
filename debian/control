@@ -1,15 +1,13 @@
 Source: desktop-base
 Section: x11
 Priority: optional
-Maintainer: Gustavo Franco <stratus@debian.org>
-Uploaders: Loïc Minier <lool@dooz.org>,
-           Fathi Boudra <fabo@debian.org>,
-           Yves-Alexis Perez <corsac@debian.org>
+Maintainer: Equipo de Desarrollo de Canaima GNU/Linux <desarrolladores@canaima.softwarelibre.gob.ve>
+Uploaders: José Miguel Parrella Romero <jparrella@onuva.com>, Carlos David Marrero <cdmarrero2040@gmail.com>, Orlando Andrés Fiol Carballo <ofiol@indesoft.org.ve>, Carlos Alejandro Guerrero Mora <guerrerocarlos@gmail.com>, Diego Alberto Aguilera Zambrano <diegoaguilera85@gmail.com>, Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>, Francisco Javier Vásquez Guerrero <franjvasquezg@gmail.com>
 Build-Depends: cdbs, debhelper (>= 6)
-Standards-Version: 3.8.0
-Homepage: http://www.debian.org/devel/debian-desktop
-Vcs-Git: svn://svn.debian.org/debian-desktop/packages/trunk/desktop-base
-Vcs-Browser: http://svn.debian.org/wsvn/debian-desktop/packages/trunk/desktop-base
+Standards-Version: 3.9.1
+Homepage: http://canaima.softwarelibre.gob.ve/
+Vcs-Git: git://gitorious.org/canaima-gnu-linux/desktop-base.git
+Vcs-Browser: http://gitorious.org/canaima-gnu-linux/desktop-base/trees/master
 
 Package: desktop-base
 Architecture: all
