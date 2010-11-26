@@ -1,3 +1,9 @@
+desktop-base (5.0.6canaima5) unstable; urgency=low
+
+  * [eb675f3] Modificando estructura de archivo del paquete fuente
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 26 Nov 2010 17:58:06 -0430
+
 desktop-base (5.0.6canaima4) unstable; urgency=low
 
   [ Carlos Alejandro Guerrero Mora ]
