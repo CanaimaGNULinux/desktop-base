@@ -1,19 +1,85 @@
-desktop-base (5.0.6canaima5) unstable; urgency=low
+desktop-base (6.0.2) unstable; urgency=low
 
-  * [eb675f3] Modificando estructura de archivo del paquete fuente
+  * ksplash/spacefun/Theme.rc:
+    - revert name change, it should follow directory name.
+  * splashy/spacefun:
+    - include images without “Debian” logo, thanks to Ulrich Hansen.
+  * ./kdm-theme/kdm.d/10_desktop-base:
+    - update path, KDE files are now in /usr/share/kde4/apps.
+  * plymouth:
+    - add spacefun theme from Aurelien Couderc.
+  * Makefile:
+    - install spacefun plymouth theme
+  * debian/post{inst,rm}: configure plymouth theme if plymouth is installed.
+  * debian/copyright updated for plymouth theme.
 
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 26 Nov 2010 17:58:06 -0430
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 27 Nov 2010 15:58:09 +0100
 
-desktop-base (5.0.6canaima4) unstable; urgency=low
+desktop-base (6.0.1) unstable; urgency=low
 
-  [ Carlos Alejandro Guerrero Mora ]
-  * Replaced images with Canaima instead.
+  * grub/grub_background.sh: invert highlight and normal text color for better
+    readability.
+  * run optipng on png files.
+  * debian/preinst, debian/postinst, debian/postrm:
+    - remove /etc/kde3/kdeglobals using dpkg-maintscript-helper closes: #603810
+  * kdesktoprc:
+    - use the desktop-background alternative in KDE config.
+  * Makefile:
+    - re-introduce kdeglobals, this time for KDE4.
+    - install KDE4 stuff in /usr/share/kde4/*.
+    - don't install -moodin ksplash themes.
+    - install spacefun ksplash theme, remove previous themes, not working with
+      KDE4.
+  * ksplash:
+    - *-moodin dropped, moodin is a KDE3 theme engine.
+    - remove all other themes not ported to KDE4.
+    - spacefun theme added
+  * ksplashrc:
+    - use spacefun theme
+  * kdesktoprc replaced by plasma-desktop-appletsrc for KDE4.
 
-  [ Luis Alejandro Martínez Faneyth ]
-  * [800db3e] Modificando debian/control
-  * [e8a8ae5] Agregando vcs-git a debian/control
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 21 Nov 2010 11:07:50 +0100
 
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Thu, 18 Nov 2010 18:37:31 -0430
+desktop-base (6.0.0) unstable; urgency=low
+
+  * The “Welcome Noémie” upload, adding Squeeze artwork.
+  * debian/control:
+    - update kde suggest to kde-standards.                      closes: #548244
+    - update standards version to 3.9.1.
+  * backgrounds:
+    - add SpaceFun wallpaper
+  * slashy:
+    - add SpaceFun theme.
+    - drop completely Moreblue Orbit theme.
+  * kdm-theme:
+    - add SpaceFun theme.
+    - configure SpaceFun as the default theme.
+  * debian/postinst:
+    - add SpaceFun alternative at maximum level (default Squeeze theme).
+    - rename grub alternative to add png extension so grub can find it.
+    - run sync before updating grub to be sure the grub background has been
+      written to disk.
+  * debian/prerm:
+    - rename grub alternative to add png extension.
+  * Makefile: 
+    - drop unused rules for KDE3 and Xfce 4.4.
+    - add SpaceFun gdm3 theme.
+    - add SpaceFun kdm theme. 
+    - install grub theme and script.
+  * {ksplash,kdm}-theme/moreblue-orbit{-default}:
+    - drop “Debian” word from image to only use DFSG-free logo. closes: #587668
+  * debian/copyright updated for the new theme.
+  * grub:
+    - add SpaceFun grub theme.
+    - add a grub_background.sh which will override settings in grub and
+      correctly set the default theme.
+  * debian/README.Debian updated.
+  * splash:
+    - add SpaceFun splash.
+  * profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml:
+    - update colors to match new splash screen.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 15 Nov 2010 19:58:48 +0100
 
 desktop-base (5.0.6) unstable; urgency=low
 

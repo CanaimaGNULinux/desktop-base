@@ -3,7 +3,7 @@ DEFAULT_BACKGROUND=desktop-background
 INSTALL=install -m 0644
 BACKGROUNDS=$(wildcard backgrounds/*.png backgrounds/*.jpg backgrounds/*.svg backgrounds/*.tga)
 EMBLEMS=$(wildcard emblems/*png emblems/*icon)
-SPLASH=$(wildcard splash/*.png)
+SPLASH=$(wildcard splash/*.png splash/*.svg)
 PIXMAPS=$(wildcard pixmaps/*.png)
 DESKTOPFILES=$(wildcard *.desktop)
 
@@ -14,9 +14,10 @@ clean:
 #	make -C usplash/moreblue-orbit clean
 
 install:
-	# splashy theme
-	mkdir -p $(DESTDIR)/usr/share/splashy/themes/moreblue-orbit
-	$(INSTALL) $(wildcard splashy/moreblue-orbit/*) $(DESTDIR)/usr/share/splashy/themes/moreblue-orbit
+	# splashy themes
+	mkdir -p $(DESTDIR)/usr/share/splashy/themes/spacefun
+	$(INSTALL) $(wildcard splashy/spacefun/*) $(DESTDIR)/usr/share/splashy/themes/spacefun
+
 	# usplash theme
 #	make -C usplash/moreblue-orbit install DESTDIR=$(CURDIR)/debian/usplash-theme-debian-desktop/usr/lib/usplash
 	# background files
@@ -34,43 +35,60 @@ install:
 	# pixmaps files
 	mkdir -p $(DESTDIR)/usr/share/pixmaps
 	$(INSTALL) $(PIXMAPS) $(DESTDIR)/usr/share/pixmaps/
+
+	# KDE Config
+	mkdir -p $(DESTDIR)/usr/share/kde4/config
+	$(INSTALL) profiles/kde-profile/kdeglobals $(DESTDIR)/usr/share/kde4/config
+
 	# KDM theme
 	mkdir -p $(DESTDIR)/etc/default/kdm.d
 	$(INSTALL) kdm-theme/kdm.d/10_desktop-base $(DESTDIR)/etc/default/kdm.d
-	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/debian-moreblue
-	$(INSTALL) $(wildcard kdm-theme/debian-moreblue/*) $(DESTDIR)/usr/share/apps/kdm/themes/debian-moreblue
-	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/moreblue-orbit
-	$(INSTALL) $(wildcard kdm-theme/moreblue-orbit/*) $(DESTDIR)/usr/share/apps/kdm/themes/moreblue-orbit
-	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/nightly
-	$(INSTALL) $(wildcard kdm-theme/nightly/*) $(DESTDIR)/usr/share/apps/kdm/themes/nightly
+
+	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/spacefun
+	$(INSTALL) $(wildcard kdm-theme/spacefun/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/spacefun
+	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/debian-moreblue
+	$(INSTALL) $(wildcard kdm-theme/debian-moreblue/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/debian-moreblue
+	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/moreblue-orbit
+	$(INSTALL) $(wildcard kdm-theme/moreblue-orbit/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/moreblue-orbit
+	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/nightly
+	$(INSTALL) $(wildcard kdm-theme/nightly/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/nightly
+
 	# KSPLASH theme
-	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-default
-	$(INSTALL) $(wildcard ksplash-theme/debian-moreblue-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-default
-	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-moodin
-	$(INSTALL) $(wildcard ksplash-theme/debian-moreblue-moodin/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-moodin
-	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-default
-	$(INSTALL) $(wildcard ksplash-theme/moreblue-orbit-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-default
-	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-moodin
-	$(INSTALL) $(wildcard ksplash-theme/moreblue-orbit-moodin/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-moodin
-	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-default
-	$(INSTALL) $(wildcard ksplash-theme/nightly-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-default
-	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-moodin
-	$(INSTALL) $(wildcard ksplash-theme/nightly-moodin/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-moodin
-	# KDE setup
-	mkdir -p $(DESTDIR)/etc/kde3
-	$(INSTALL) profiles/kde-profile/kdeglobals $(DESTDIR)/etc/kde3
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun
+	$(INSTALL) ksplash-theme/spacefun/Preview.png $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun
+	$(INSTALL) ksplash-theme/spacefun/Theme.rc $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1024x768
+	$(INSTALL) $(wildcard ksplash-theme/spacefun/1024x768/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1024x768
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1280x1024
+	$(INSTALL) $(wildcard ksplash-theme/spacefun/1280x1024/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1280x1024
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1366x768
+	$(INSTALL) $(wildcard ksplash-theme/spacefun/1366x768/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1366x768
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1600x1200
+	$(INSTALL) $(wildcard ksplash-theme/spacefun/1600x1200/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1600x1200
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1920x1080
+	$(INSTALL) $(wildcard ksplash-theme/spacefun/1920x1080/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1920x1080
+
+	# KDE Config
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 	$(INSTALL) $(wildcard profiles/kde-profile/share/config/*) $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
-	# Xfce 4.4
-	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/mcs_settings
-	$(INSTALL) $(wildcard profiles/xdg-config/xfce4/mcs_settings/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/mcs_settings
-	$(INSTALL) $(wildcard profiles/xdg-config/xfce4/mcs_settings/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/mcs_settings
-	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4-session
-	$(INSTALL) $(wildcard profiles/xdg-config/xfce4-session/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4-session
+
 	# Xfce 4.6
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml
 	$(INSTALL) $(wildcard profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml
 	# GNOME background descriptor
 	mkdir -p $(DESTDIR)/usr/share/gnome-background-properties
 	$(INSTALL) gnome-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/debian.xml
+	# GDM 3 theme
+	mkdir -p $(DESTDIR)/usr/share/gdm/greeter-config
+	$(INSTALL) gdm3/background.svg $(DESTDIR)/usr/share/images/desktop-base/login-background.svg
+	$(INSTALL) gdm3/10_desktop-base $(DESTDIR)/usr/share/gdm/greeter-config
 
+	# grub
+	$(INSTALL) grub/spacefun-grub.png $(DESTDIR)/usr/share/images/desktop-base/
+	$(INSTALL) grub/spacefun-grub-widescreen.png $(DESTDIR)/usr/share/images/desktop-base/
+	$(INSTALL) grub/grub_background.sh $(DESTDIR)/usr/share/desktop-base/
+
+	# plymouth
+	install -d $(DESTDIR)/usr/share/plymouth/themes/spacefun
+	$(INSTALL) $(wildcard plymouth/spacefun/*) $(DESTDIR)/usr/share/plymouth/themes/spacefun
+	
