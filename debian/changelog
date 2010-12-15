@@ -1,5 +1,12 @@
+desktop-base (6.0.2+canaima0) unstable; urgency=low
+
+  * [392e2b6] Incluyendo imágenes de Canaima GNU/Linux
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 15 Dec 2010 04:36:29 -0430
+
 desktop-base (6.0.2) unstable; urgency=low
 
+  [ Yves-Alexis Perez ]
   * ksplash/spacefun/Theme.rc:
     - revert name change, it should follow directory name.
   * splashy/spacefun:
@@ -13,7 +20,7 @@ desktop-base (6.0.2) unstable; urgency=low
   * debian/post{inst,rm}: configure plymouth theme if plymouth is installed.
   * debian/copyright updated for plymouth theme.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Sat, 27 Nov 2010 15:58:09 +0100
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 15 Dec 2010 04:35:45 -0430
 
 desktop-base (6.0.1) unstable; urgency=low
 
