@@ -1,16 +1,13 @@
 Source: desktop-base
 Section: x11
 Priority: optional
-Maintainer: Gustavo Franco <stratus@debian.org>
-Uploaders: Loïc Minier <lool@dooz.org>,
-           Fathi Boudra <fabo@debian.org>,
-           Yves-Alexis Perez <corsac@debian.org>
-Build-Depends: cdbs, debhelper (>= 6)
-# libusplash-dev, imagemagick, librsvg2-bin
+Maintainer: Equipo de Desarrollo de Canaima GNU/Linux <desarrolladores@canaima.softwarelibre.gob.ve>
+Uploaders: José Miguel Parrella Romero <jparrella@onuva.com>, Carlos David Marrero <cdmarrero2040@gmail.com>, Orlando Andrés Fiol Carballo <ofiol@indesoft.org.ve>, Carlos Alejandro Guerrero Mora <guerrerocarlos@gmail.com>, Diego Alberto Aguilera Zambrano <diegoaguilera85@gmail.com>, Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>, Francisco Javier Vásquez Guerrero <franjvasquezg@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), cdbs
 Standards-Version: 3.9.1
-Homepage: http://www.debian.org/devel/debian-desktop
-Vcs-Browser: http://svn.debian.org/wsvn/debian-desktop/packages/trunk/desktop-base
-Vcs-Svn: svn://svn.debian.org/debian-desktop/packages/trunk/desktop-base
+Homepage: http://canaima.softwarelibre.gob.ve/
+Vcs-Git: git://gitorious.org/canaima-gnu-linux/desktop-base.git
+Vcs-Browser: http://gitorious.org/canaima-gnu-linux/desktop-base/trees/master
 
 Package: desktop-base
 Architecture: all
@@ -23,13 +20,3 @@ Description: common files for the Debian Desktop
  Debian related material (suitable for placement on a user's desktop),
  and other common files between the available desktop environments
  such as GNOME and KDE.
-
-#Package: usplash-theme-debian-desktop
-#Section: misc
-#Architecture: amd64 i386 powerpc sparc
-#Depends: ${shlibs:Depends}, usplash
-#Provides: usplash-theme
-#Description: Debian Desktop usplash theme
-# This package contains an usplash theme based on Debian Desktop project.
-# .
-# See http://wiki.debian.org/DebianDesktopArtwork for more details.

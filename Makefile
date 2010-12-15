@@ -14,24 +14,27 @@ clean:
 #	make -C usplash/moreblue-orbit clean
 
 install:
+
 	# splashy themes
 	mkdir -p $(DESTDIR)/usr/share/splashy/themes/spacefun
 	$(INSTALL) $(wildcard splashy/spacefun/*) $(DESTDIR)/usr/share/splashy/themes/spacefun
 
-	# usplash theme
-#	make -C usplash/moreblue-orbit install DESTDIR=$(CURDIR)/debian/usplash-theme-debian-desktop/usr/lib/usplash
 	# background files
 	mkdir -p $(DESTDIR)/usr/share/images/desktop-base
 	$(INSTALL) $(BACKGROUNDS) $(DESTDIR)/usr/share/images/desktop-base
 	cd $(DESTDIR)/usr/share/images/desktop-base && ln -s $(DEFAULT_BACKGROUND) default
+
 	# splash files
 	$(INSTALL) $(SPLASH) $(DESTDIR)/usr/share/images/desktop-base
+
 	# emblems
 	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/48x48/emblems
 	$(INSTALL) $(EMBLEMS) $(DESTDIR)/usr/share/icons/hicolor/48x48/emblems/
+
 	# desktop files
 	mkdir -p $(DESTDIR)/usr/share/desktop-base
 	$(INSTALL) $(DESKTOPFILES) $(DESTDIR)/usr/share/desktop-base/
+
 	# pixmaps files
 	mkdir -p $(DESTDIR)/usr/share/pixmaps
 	$(INSTALL) $(PIXMAPS) $(DESTDIR)/usr/share/pixmaps/
@@ -75,17 +78,18 @@ install:
 	# Xfce 4.6
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml
 	$(INSTALL) $(wildcard profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml
+
 	# GNOME background descriptor
 	mkdir -p $(DESTDIR)/usr/share/gnome-background-properties
 	$(INSTALL) gnome-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/debian.xml
+
 	# GDM 3 theme
 	mkdir -p $(DESTDIR)/usr/share/gdm/greeter-config
-	$(INSTALL) gdm3/background.svg $(DESTDIR)/usr/share/images/desktop-base/login-background.svg
+	$(INSTALL) gdm3/canaima-gdm3.svg $(DESTDIR)/usr/share/images/desktop-base/login-background.svg
 	$(INSTALL) gdm3/10_desktop-base $(DESTDIR)/usr/share/gdm/greeter-config
 
 	# grub
-	$(INSTALL) grub/spacefun-grub.png $(DESTDIR)/usr/share/images/desktop-base/
-	$(INSTALL) grub/spacefun-grub-widescreen.png $(DESTDIR)/usr/share/images/desktop-base/
+	$(INSTALL) grub/canaima-grub.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/grub_background.sh $(DESTDIR)/usr/share/desktop-base/
 
 	# plymouth

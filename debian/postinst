@@ -20,64 +20,69 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/spacefun-wallpaper.svg 60
+        /usr/share/images/desktop-base/canaima-fondo-musgo.svg 60
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/spacefun-wallpaper-widescreen.svg  55
+        /usr/share/images/desktop-base/canaima-fondo-jaspe.svg  55
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/moreblue-orbit-wallpaper.svg 50
+        /usr/share/images/desktop-base/canaima-fondo-playa.svg 50
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/moreblue-orbit-wallpaper-widescreen.svg  50
+        /usr/share/images/desktop-base/canaima-fondo-python.svg  45
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/nightly-wallpaper.png 40
+        /usr/share/images/desktop-base/canaima-fondo-abstracto.jpg 40
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/debian-blueish-wallpaper.svg 30
+        /usr/share/images/desktop-base/canaima-fondo-pastel.png 35
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
+        /usr/share/images/desktop-base/canaima-fondo-amanecer.png 30
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
+        /usr/share/images/desktop-base/canaima-fondo-atardecer.png 25
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
+        /usr/share/images/desktop-base/canaima-fondo-viejo.png 20
 
     # Alternatives for the splash
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-splash \
         desktop-splash \
-        /usr/share/images/desktop-base/spacefun-splash.svg 50
+        /usr/share/images/desktop-base/canaima-gnome-splash.svg 50
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-splash \
         desktop-splash \
-        /usr/share/images/desktop-base/moreblue-orbit-splash.png 40
-
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-splash \
-        desktop-splash \
-        /usr/share/images/desktop-base/gnome-splash-curves.png 30
+        /usr/share/images/desktop-base/canaima-gnome-splash-viejo.png 40
 
     # Alternatives for grub
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-grub.png \
         desktop-grub \
-        /usr/share/images/desktop-base/spacefun-grub.png 15
+        /usr/share/images/desktop-base/canaima-grub.png 15
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-grub.png \
         desktop-grub \
-        /usr/share/images/desktop-base/spacefun-grub-widescreen.png 14
-
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-grub.png \
-        desktop-grub \
-        /usr/share/images/desktop-base/moreblue-orbit-grub.png 10
+        /usr/share/images/desktop-base/canaima-grub-viejo.png 10
 
     # GRUB background
     if which update-grub2 > /dev/null ; then
@@ -93,7 +98,7 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     # Plymouth
     if [ -x /usr/sbin/plymouth-set-default-theme ];
     then
-      plymouth-set-default-theme spacefun ||true
+      plymouth-set-default-theme canaima-plymouth ||true
     fi
 
     if [ -x /usr/sbin/update-initramfs ]; then
