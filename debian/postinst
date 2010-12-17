@@ -60,7 +60,7 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-viejo.png 20
+        /usr/share/images/desktop-base/canaima-fondo-viejo.jpg 20
 
     # Alternatives for the splash
     update-alternatives --install \
