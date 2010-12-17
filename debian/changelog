@@ -1,3 +1,9 @@
+desktop-base (6.0.2+canaima1) unstable; urgency=low
+
+  * [fca342a] Corrigiendo extensión de archivo
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Thu, 16 Dec 2010 20:55:53 -0430
+
 desktop-base (6.0.2+canaima0) unstable; urgency=low
 
   * [392e2b6] Incluyendo imágenes de Canaima GNU/Linux
