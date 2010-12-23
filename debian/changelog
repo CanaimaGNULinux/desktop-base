@@ -1,3 +1,9 @@
+desktop-base (6.0.2+canaima3) unstable; urgency=low
+
+  * [8c3059e] El burro volviendo a cometer el mismo error
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Thu, 23 Dec 2010 12:42:36 -0430
+
 desktop-base (6.0.2+canaima2) unstable; urgency=low
 
   * [b4a79b0] OOps! se nos olvidó mover una imagen en el Makefile
