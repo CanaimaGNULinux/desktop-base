@@ -8,10 +8,8 @@ PIXMAPS=$(wildcard pixmaps/*.png)
 DESKTOPFILES=$(wildcard *.desktop)
 
 all:
-#	make -C usplash/moreblue-orbit
 
 clean:
-#	make -C usplash/moreblue-orbit clean
 
 install:
 
