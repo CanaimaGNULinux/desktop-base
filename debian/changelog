@@ -1,3 +1,9 @@
+desktop-base (6.0.5+canaima5) unstable; urgency=low
+
+  * [cdf48b2] Agregando fondos portados desde canaima-estilo-visual
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Mon, 07 Feb 2011 16:23:57 -0430
+
 desktop-base (6.0.5+canaima4) unstable; urgency=low
 
   * [872209d] Borrando innecesarios
