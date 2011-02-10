@@ -1,3 +1,9 @@
+desktop-base (6.0.5+canaima6) unstable; urgency=low
+
+  * [3c8e74b] Quitando XCF's, dejando los SVG's (pesan mucho)
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Thu, 10 Feb 2011 00:37:00 -0430
+
 desktop-base (6.0.5+canaima5) unstable; urgency=low
 
   * [cdf48b2] Agregando fondos portados desde canaima-estilo-visual
