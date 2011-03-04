@@ -1,3 +1,9 @@
+desktop-base (6.0.5+canaima7) unstable; urgency=low
+
+  * [606cf5f] Agregando nuevos fondos de pantalla
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 04 Mar 2011 10:34:48 -0430
+
 desktop-base (6.0.5+canaima6) unstable; urgency=low
 
   * [3c8e74b] Quitando XCF's, dejando los SVG's (pesan mucho)
