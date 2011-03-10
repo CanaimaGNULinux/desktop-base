@@ -1,3 +1,10 @@
+desktop-base (6.0.5+canaima8) unstable; urgency=low
+
+  * [27b8b48] Removiendo fondos duplicados, modificando el XML que lista
+    los fondos en el diálogo de gnome, depurando Makefile y postinst
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 09 Mar 2011 21:10:07 -0430
+
 desktop-base (6.0.5+canaima7) unstable; urgency=low
 
   * [606cf5f] Agregando nuevos fondos de pantalla
