@@ -89,7 +89,6 @@ install:
 	# grub
 	$(INSTALL) grub/canaima-grub.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/grub_background.sh $(DESTDIR)/usr/share/desktop-base/
-	$(INSTALL) grub/canaima-grub-viejo.png $(DESTDIR)/usr/share/images/desktop-base/
 
 	# plymouth
 	install -d $(DESTDIR)/usr/share/plymouth/themes/spacefun

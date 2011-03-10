@@ -27,7 +27,7 @@
   </wallpaper>
   <wallpaper>
     <name>CanaimaFondoFemenino</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-femenino.png</filename>
+    <filename>/usr/share/images/desktop-base/canaima-fondo-femenino.svg</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
@@ -43,7 +43,7 @@
   </wallpaper>
   <wallpaper>
     <name>CanaimaFondoJaspe</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-jaspe.png</filename>
+    <filename>/usr/share/images/desktop-base/canaima-fondo-jaspe.svg</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
@@ -51,7 +51,7 @@
   </wallpaper>
   <wallpaper>
     <name>CanaimaFondoMusgo</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-musgo.png</filename>
+    <filename>/usr/share/images/desktop-base/canaima-fondo-musgo.svg</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
@@ -59,7 +59,7 @@
   </wallpaper>
   <wallpaper>
     <name>CanaimaFondoOceano</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-oceano.png</filename>
+    <filename>/usr/share/images/desktop-base/canaima-fondo-oceano.svg</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>

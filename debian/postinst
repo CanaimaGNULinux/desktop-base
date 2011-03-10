@@ -57,21 +57,21 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
         desktop-background \
         /usr/share/images/desktop-base/canaima-fondo-atardecer.png 25
 
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-background \
-        desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-viejo.jpg 20
+#    update-alternatives --install \
+#        /usr/share/images/desktop-base/desktop-background \
+#        desktop-background \
+#        /usr/share/images/desktop-base/canaima-fondo-viejo.jpg 20
 
     # Alternatives for the splash
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-splash \
-        desktop-splash \
-        /usr/share/images/desktop-base/canaima-gnome-splash.svg 50
+#    update-alternatives --install \
+#        /usr/share/images/desktop-base/desktop-splash \
+#        desktop-splash \
+#        /usr/share/images/desktop-base/canaima-gnome-splash.svg 50
 
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-splash \
-        desktop-splash \
-        /usr/share/images/desktop-base/canaima-gnome-splash-viejo.png 40
+#    update-alternatives --install \
+#        /usr/share/images/desktop-base/desktop-splash \
+#        desktop-splash \
+#        /usr/share/images/desktop-base/canaima-gnome-splash-viejo.png 40
 
     # Alternatives for grub
     update-alternatives --install \
@@ -79,10 +79,10 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
         desktop-grub \
         /usr/share/images/desktop-base/canaima-grub.png 15
 
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-grub.png \
-        desktop-grub \
-        /usr/share/images/desktop-base/canaima-grub-viejo.png 10
+#    update-alternatives --install \
+#        /usr/share/images/desktop-base/desktop-grub.png \
+#        desktop-grub \
+#        /usr/share/images/desktop-base/canaima-grub-viejo.png 10
 
     # GRUB background
     if which update-grub2 > /dev/null ; then
