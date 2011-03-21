@@ -1,3 +1,9 @@
+desktop-base (6.0.5+canaima9) unstable; urgency=low
+
+  * [a6aab48] Agregando lxde a los recommends.
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Mon, 21 Mar 2011 15:57:49 -0430
+
 desktop-base (6.0.5+canaima8) unstable; urgency=low
 
   * [27b8b48] Removiendo fondos duplicados, modificando el XML que lista
