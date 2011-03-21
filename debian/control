@@ -12,7 +12,7 @@ Vcs-Browser: http://gitorious.org/canaima-gnu-linux/desktop-base/trees/master
 Package: desktop-base
 Architecture: all
 Depends: librsvg2-common
-Suggests: gnome | kde-standard | xfce4 | wmaker
+Suggests: gnome | kde-standard | xfce4 | wmaker | lxde
 Description: common files for the Debian Desktop
  This package contains various miscellaneous files which are used by
  Debian Desktop installations.  Currently, it provides some
