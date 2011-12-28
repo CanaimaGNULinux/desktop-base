@@ -16,7 +16,7 @@ build:
 
 	@printf "Generando imágenes desde las fuentes [SVG > PNG] ["
 	@for IMAGE in $(NAMES); do \
-		convert $${IMAGE}.svg $${IMAGE}.png; \
+		convert -background None $${IMAGE}.svg $${IMAGE}.png; \
 		printf "."; \
 	done
 	@printf "]\n"
