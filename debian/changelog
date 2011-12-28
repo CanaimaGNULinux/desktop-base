@@ -2,7 +2,7 @@ desktop-base (6.0.6-1canaima9) stable; urgency=low
 
   * [a6aab48] Agregando lxde a los recommends.
 
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Mon, 21 Mar 2011 15:57:49 -0430
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 28 Dec 2011 10:17:18 -0430
 
 desktop-base (6.0.5+canaima8) unstable; urgency=low
 
