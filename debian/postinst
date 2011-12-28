@@ -20,69 +20,74 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-musgo.svg 60
+        /usr/share/images/desktop-base/canaima-fondo-musgo-2.png 60
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-jaspe.svg  55
+        /usr/share/images/desktop-base/canaima-selva-vectorial-verde.png 55
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-playa.svg 50
+        /usr/share/images/desktop-base/canaima-selva-vectorial-amarillo.png 50
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-python.svg  45
+        /usr/share/images/desktop-base/canaima-selva-vectorial-bohemio.png 45
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-abstracto.jpg 40
+        /usr/share/images/desktop-base/canaima-selva-vectorial-gris-claro.png 40
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-pastel.png 35
+        /usr/share/images/desktop-base/canaima-frailejon.png 35
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-amanecer.png 30
+        /usr/share/images/desktop-base/canaima-cordillera.png 30
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-atardecer.png 25
+        /usr/share/images/desktop-base/canaima-muelle.png 25
 
-#    update-alternatives --install \
-#        /usr/share/images/desktop-base/desktop-background \
-#        desktop-background \
-#        /usr/share/images/desktop-base/canaima-fondo-viejo.jpg 20
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
+        /usr/share/images/desktop-base/canaima-vectores-pasteles-1.png 20
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
+        /usr/share/images/desktop-base/canaima-vectores-pasteles-2.png 15
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
+        /usr/share/images/desktop-base/canaima-vectores-pasteles-3.png 10
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
+        /usr/share/images/desktop-base/canaima-formas-3d.png 5
 
     # Alternatives for the splash
-#    update-alternatives --install \
-#        /usr/share/images/desktop-base/desktop-splash \
-#        desktop-splash \
-#        /usr/share/images/desktop-base/canaima-gnome-splash.svg 50
-
-#    update-alternatives --install \
-#        /usr/share/images/desktop-base/desktop-splash \
-#        desktop-splash \
-#        /usr/share/images/desktop-base/canaima-gnome-splash-viejo.png 40
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-splash \
+        desktop-splash \
+        /usr/share/images/desktop-base/canaima-gnome-splash.png 90
 
     # Alternatives for grub
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-grub.png \
         desktop-grub \
-        /usr/share/images/desktop-base/canaima-grub.png 15
-
-#    update-alternatives --install \
-#        /usr/share/images/desktop-base/desktop-grub.png \
-#        desktop-grub \
-#        /usr/share/images/desktop-base/canaima-grub-viejo.png 10
+        /usr/share/images/desktop-base/canaima-grub.png 90
 
     # GRUB background
     if which update-grub2 > /dev/null ; then

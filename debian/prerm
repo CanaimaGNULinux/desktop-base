@@ -7,55 +7,61 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
     # remove background alternatives
     update-alternatives --remove \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-musgo.svg
+        /usr/share/images/desktop-base/canaima-fondo-musgo-2.png
 
     update-alternatives --remove \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-jaspe.svg
+        /usr/share/images/desktop-base/canaima-selva-vectorial-verde.png
 
     update-alternatives --remove \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-playa.svg
+        /usr/share/images/desktop-base/canaima-selva-vectorial-amarillo.png
 
     update-alternatives --remove \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-python.svg
+        /usr/share/images/desktop-base/canaima-selva-vectorial-bohemio.png
 
     update-alternatives --remove \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-abstracto.jpg
+        /usr/share/images/desktop-base/canaima-selva-vectorial-gris-claro.png
 
     update-alternatives --remove \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-pastel.png
+        /usr/share/images/desktop-base/canaima-frailejon.png
 
     update-alternatives --remove \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-amanecer.png
+        /usr/share/images/desktop-base/canaima-cordillera.png
 
     update-alternatives --remove \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-atardecer.png
+        /usr/share/images/desktop-base/canaima-muelle.png
 
     update-alternatives --remove \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-fondo-viejo.png
+        /usr/share/images/desktop-base/canaima-vectores-pasteles-1.png
+
+    update-alternatives --remove \
+        desktop-background \
+        /usr/share/images/desktop-base/canaima-vectores-pasteles-2.png
+
+    update-alternatives --remove \
+        desktop-background \
+        /usr/share/images/desktop-base/canaima-vectores-pasteles-3.png
+
+    update-alternatives --remove \
+        desktop-background \
+        /usr/share/images/desktop-base/canaima-formas-3d.png
 
     # remove splash alternatives
-    update-alternatives --remove \
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-splash \
         desktop-splash \
-        /usr/share/images/desktop-base/canaima-gnome-splash.svg
-
-    update-alternatives --remove \
-        desktop-splash \
-        /usr/share/images/desktop-base/canaima-gnome-splash-viejo.png
+        /usr/share/images/desktop-base/canaima-gnome-splash.png
 
     # remove grub alternatives
-    update-alternatives --remove \
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-grub.png \
         desktop-grub \
         /usr/share/images/desktop-base/canaima-grub.png
-
-    update-alternatives --remove \
-        desktop-grub \
-        /usr/share/images/desktop-base/canaima-grub-viejo.png
 fi

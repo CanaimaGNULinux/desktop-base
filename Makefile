@@ -1,15 +1,29 @@
 DEFAULT_BACKGROUND=desktop-background
 
 INSTALL=install -m 0644
-BACKGROUNDS=$(wildcard backgrounds/*.png backgrounds/*.jpg backgrounds/*.svg backgrounds/*.tga)
+BACKGROUNDS=$(wildcard backgrounds/*.png)
 EMBLEMS=$(wildcard emblems/*png emblems/*icon)
-SPLASH=$(wildcard splash/*.png splash/*.svg)
+SPLASH=$(wildcard splash/*.png)
 PIXMAPS=$(wildcard pixmaps/*.png)
 DESKTOPFILES=$(wildcard *.desktop)
+SVGS=$(wildcard backgrounds/*.svg splash/*.svg gdm3/*.svg grub/*.svg)
+PNGS=$(shell echo $(SVGS) | sed 's/.svg/.png/g' )
+NAMES=$(shell echo $(SVGS) | sed 's/.svg//g' )
 
-all:
+all: build
+
+build:
+
+	@printf "Generando imágenes desde las fuentes [SVG > PNG] ["
+	@for IMAGE in $(NAMES); do \
+		convert $${IMAGE}.svg $${IMAGE}.png; \
+		printf "."; \
+	done
+	@printf "]\n"
 
 clean:
+
+	rm -rf $(PNGS)
 
 install:
 
@@ -83,7 +97,7 @@ install:
 
 	# GDM 3 theme
 	mkdir -p $(DESTDIR)/usr/share/gdm/greeter-config
-	$(INSTALL) gdm3/canaima-gdm3.svg $(DESTDIR)/usr/share/images/desktop-base/login-background.svg
+	$(INSTALL) gdm3/canaima-gdm3.png $(DESTDIR)/usr/share/images/desktop-base/login-background.png
 	$(INSTALL) gdm3/10_desktop-base $(DESTDIR)/usr/share/gdm/greeter-config
 
 	# grub
