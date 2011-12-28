@@ -2,8 +2,8 @@ Source: desktop-base
 Section: x11
 Priority: optional
 Maintainer: Equipo de Desarrollo de Canaima GNU/Linux <desarrolladores@canaima.softwarelibre.gob.ve>
-Uploaders: José Miguel Parrella Romero <jparrella@onuva.com>, Carlos David Marrero <cdmarrero2040@gmail.com>, Orlando Andrés Fiol Carballo <ofiol@indesoft.org.ve>, Carlos Alejandro Guerrero Mora <guerrerocarlos@gmail.com>, Diego Alberto Aguilera Zambrano <diegoaguilera85@gmail.com>, Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>, Francisco Javier Vásquez Guerrero <franjvasquezg@gmail.com>
-Build-Depends: debhelper (>= 7.0.50~), cdbs
+Uploaders: Sasha Veronica Solano Grosjean <sashasolano@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), imagemagick, libmagickcore-extra | libmagickcore3-extra | libmagickcore4-extra
 Standards-Version: 3.9.1
 Homepage: http://canaima.softwarelibre.gob.ve/
 Vcs-Git: git://gitorious.org/canaima-gnu-linux/desktop-base.git
@@ -13,7 +13,7 @@ Package: desktop-base
 Architecture: all
 Depends: librsvg2-common
 Suggests: gnome | kde-standard | xfce4 | wmaker | lxde
-Description: common files for the Debian Desktop
+Description: Archivos comunes para los escritorios de Canaima GNU/Linux
  This package contains various miscellaneous files which are used by
  Debian Desktop installations.  Currently, it provides some
  Debian-related artwork and themes, .desktop files containing links to

@@ -1,4 +1,4 @@
-desktop-base (6.0.5+canaima9) unstable; urgency=low
+desktop-base (6.0.6-1canaima9) stable; urgency=low
 
   * [a6aab48] Agregando lxde a los recommends.
 

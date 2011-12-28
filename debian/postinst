@@ -72,11 +72,6 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
         desktop-background \
         /usr/share/images/desktop-base/canaima-vectores-pasteles-3.png 10
 
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-background \
-        desktop-background \
-        /usr/share/images/desktop-base/canaima-formas-3d.png 5
-
     # Alternatives for the splash
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-splash \

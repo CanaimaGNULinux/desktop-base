@@ -2,104 +2,88 @@
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
   <wallpaper>
-    <name>CanaimaFondoAbstracto</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-abstracto.jpg</filename>
+    <name>CanaimaFondoMusgo2</name>
+    <filename>/usr/share/images/desktop-base/canaima-fondo-musgo-2.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaFondoAmanecer</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-amanecer.png</filename>
+    <name>CanaimaSelvaVectorialVerde</name>
+    <filename>/usr/share/images/desktop-base/canaima-selva-vectorial-verde.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaFondoAtardecer</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-atardecer.png</filename>
+    <name>CanaimaSelvaVectorialAmarillo</name>
+    <filename>/usr/share/images/desktop-base/canaima-selva-vectorial-amarillo.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaFondoFemenino</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-femenino.svg</filename>
+    <name>CanaimaSelvaVectorialBohemio</name>
+    <filename>/usr/share/images/desktop-base/canaima-selva-vectorial-bohemio.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaFondoFlor</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-flor.png</filename>
+    <name>CanaimaSelvaVectorialGrisClaro</name>
+    <filename>/usr/share/images/desktop-base/canaima-selva-vectorial-gris-claro.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaFondoJaspe</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-jaspe.svg</filename>
+    <name>CanaimaFrailejon</name>
+    <filename>/usr/share/images/desktop-base/canaima-frailejon.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaFondoMusgo</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-musgo.svg</filename>
+    <name>CanaimaCordillera</name>
+    <filename>/usr/share/images/desktop-base/canaima-cordillera.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaFondoOceano</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-oceano.svg</filename>
+    <name>CanaimaMuelle</name>
+    <filename>/usr/share/images/desktop-base/canaima-muelle.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaFondoPastel</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-pastel.png</filename>
+    <name>CanaimaVectoresPasteles1</name>
+    <filename>/usr/share/images/desktop-base/canaima-vectores-pasteles-1.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaFondoPlaya</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-playa.png</filename>
+    <name>CanaimaVectoresPasteles2</name>
+    <filename>/usr/share/images/desktop-base/canaima-vectores-pasteles-1.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaFondoPython</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-python.png</filename>
-    <options>zoom</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>#282928</pcolor>
-    <scolor>#000000</scolor>
-  </wallpaper>
-  <wallpaper>
-    <name>CanaimaFondoViejo</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-viejo.jpg</filename>
-    <options>zoom</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>#282928</pcolor>
-    <scolor>#000000</scolor>
-  </wallpaper>
-  <wallpaper>
-    <name>CanaimaFondoTortuga</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-tortuga.png</filename>
+    <name>CanaimaVectoresPasteles3</name>
+    <filename>/usr/share/images/desktop-base/canaima-vectores-pasteles-1.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
