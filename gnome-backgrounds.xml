@@ -10,22 +10,6 @@
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaSelvaVectorialVerde</name>
-    <filename>/usr/share/images/desktop-base/canaima-selva-vectorial-verde.png</filename>
-    <options>zoom</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>#282928</pcolor>
-    <scolor>#000000</scolor>
-  </wallpaper>
-  <wallpaper>
-    <name>CanaimaSelvaVectorialAmarillo</name>
-    <filename>/usr/share/images/desktop-base/canaima-selva-vectorial-amarillo.png</filename>
-    <options>zoom</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>#282928</pcolor>
-    <scolor>#000000</scolor>
-  </wallpaper>
-  <wallpaper>
     <name>CanaimaSelvaVectorialBohemio</name>
     <filename>/usr/share/images/desktop-base/canaima-selva-vectorial-bohemio.png</filename>
     <options>zoom</options>
@@ -34,32 +18,8 @@
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaSelvaVectorialGrisClaro</name>
-    <filename>/usr/share/images/desktop-base/canaima-selva-vectorial-gris-claro.png</filename>
-    <options>zoom</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>#282928</pcolor>
-    <scolor>#000000</scolor>
-  </wallpaper>
-  <wallpaper>
-    <name>CanaimaFrailejon</name>
-    <filename>/usr/share/images/desktop-base/canaima-frailejon.png</filename>
-    <options>zoom</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>#282928</pcolor>
-    <scolor>#000000</scolor>
-  </wallpaper>
-  <wallpaper>
     <name>CanaimaCordillera</name>
     <filename>/usr/share/images/desktop-base/canaima-cordillera.png</filename>
-    <options>zoom</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>#282928</pcolor>
-    <scolor>#000000</scolor>
-  </wallpaper>
-  <wallpaper>
-    <name>CanaimaMuelle</name>
-    <filename>/usr/share/images/desktop-base/canaima-muelle.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
@@ -75,7 +35,7 @@
   </wallpaper>
   <wallpaper>
     <name>CanaimaVectoresPasteles2</name>
-    <filename>/usr/share/images/desktop-base/canaima-vectores-pasteles-1.png</filename>
+    <filename>/usr/share/images/desktop-base/canaima-vectores-pasteles-2.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
@@ -83,7 +43,7 @@
   </wallpaper>
   <wallpaper>
     <name>CanaimaVectoresPasteles3</name>
-    <filename>/usr/share/images/desktop-base/canaima-vectores-pasteles-1.png</filename>
+    <filename>/usr/share/images/desktop-base/canaima-vectores-pasteles-3.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>

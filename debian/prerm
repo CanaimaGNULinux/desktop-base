@@ -11,31 +11,11 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
 
     update-alternatives --remove \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-selva-vectorial-verde.png
-
-    update-alternatives --remove \
-        desktop-background \
-        /usr/share/images/desktop-base/canaima-selva-vectorial-amarillo.png
-
-    update-alternatives --remove \
-        desktop-background \
         /usr/share/images/desktop-base/canaima-selva-vectorial-bohemio.png
 
     update-alternatives --remove \
         desktop-background \
-        /usr/share/images/desktop-base/canaima-selva-vectorial-gris-claro.png
-
-    update-alternatives --remove \
-        desktop-background \
-        /usr/share/images/desktop-base/canaima-frailejon.png
-
-    update-alternatives --remove \
-        desktop-background \
         /usr/share/images/desktop-base/canaima-cordillera.png
-
-    update-alternatives --remove \
-        desktop-background \
-        /usr/share/images/desktop-base/canaima-muelle.png
 
     update-alternatives --remove \
         desktop-background \
@@ -48,10 +28,6 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
     update-alternatives --remove \
         desktop-background \
         /usr/share/images/desktop-base/canaima-vectores-pasteles-3.png
-
-    update-alternatives --remove \
-        desktop-background \
-        /usr/share/images/desktop-base/canaima-formas-3d.png
 
     # remove splash alternatives
     update-alternatives --install \
