@@ -1,3 +1,10 @@
+desktop-base (6.0.6-1canaima11) stable; urgency=low
+
+  * [aec30e4] Removiendo algunos fondos de pantalla para disminuir el
+    peso de la ISO.
+
+ -- Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>  Sat, 07 Jul 2012 02:03:31 -0430
+
 desktop-base (6.0.6-1canaima10) stable; urgency=low
 
   * [69fc55a] Agregando background None a Makefile para permitir
