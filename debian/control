@@ -12,11 +12,22 @@ Vcs-Browser: http://gitorious.org/canaima-gnu-linux/desktop-base/trees/master
 Package: desktop-base
 Architecture: all
 Depends: librsvg2-common
-Suggests: gnome | kde-standard | xfce4 | wmaker | lxde
-Description: Archivos comunes para los escritorios de Canaima GNU/Linux
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Suggests: gnome | kde-standard | xfce4 | wmaker
+Description: common files for the Debian Desktop
  This package contains various miscellaneous files which are used by
  Debian Desktop installations.  Currently, it provides some
  Debian-related artwork and themes, .desktop files containing links to
  Debian related material (suitable for placement on a user's desktop),
  and other common files between the available desktop environments
  such as GNOME and KDE.
+
+#Package: usplash-theme-debian-desktop
+#Section: misc
+#Architecture: amd64 i386 powerpc sparc
+#Depends: ${shlibs:Depends}, usplash
+#Provides: usplash-theme
+#Description: Debian Desktop usplash theme
+# This package contains an usplash theme based on Debian Desktop project.
+# .
+# See http://wiki.debian.org/DebianDesktopArtwork for more details.

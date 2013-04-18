@@ -3,77 +3,99 @@ Tue, 22 Oct 2002 15:05:34 -0400.
 
 This package is comprised of bits and pieces from various sources.
 
-Copyright:
+The Debian “Open Use” (without “Debian” word) logo is used in various bits of
+artwork:
 
-The debblue "kit" (composed of the background and the splash) was
-created by Jaap Haitsma (jaap at haitsma dot org) and is licensed
-under the GNU General Public License (see below). They can be
-downloaded from the http://debblue.debian.net/downloads.php web page
-in various formats.
-
-The  Debian swirl  background  images included  in  this package  were
-created by  gfburke@earthlink.net (Gary Burke), and  were derived from
-copyright-free   stock   artwork.    It   can   be   downloaded   from
-http://wm.themes.org, as "Debian.tar.gz".
-
-The   Debian   "bluedeb"   background   was  created   by   Roger   So
-<rogerso@debian.org>, and is under the  terms of the BSD license.  See
-../backgrounds/bluedeb.COPYING for more information.
-
-The debian-background.svg file has been provided by Josselin Mouette
-<joss@debian.org>, and is a derivative work of the open use Debian
-logo, which has the following copyright notice:
-
-<debian-background.svg>
     Copyright (c) 1999 Software in the Public Interest
- 
-    This logo or a modified version may be used by anyone to refer to
-    the Debian project, but does not indicate endorsement by the
-    project.
 
-    Note: we would appreciate that you make the image a link to
-    http://www.debian.org/ if you use it on a web page.
-</debian-background.svg>
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"), to
+    deal in the Software without restriction, including without limitation the
+    rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+    sell copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
 
-The   Debian   splash   screen   was   created   by   Mirko   Hufnagel
-<mirko@abitur97.de>, and is placed into the public domain.
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
 
-The    Debian_red    splash    screen    imagem   was    created    by
-<webanetwork@libero.it>  and is copyright-free.  It can  be downloaded
-from http://art.gnome.org/themes/splash_screens/488.php.
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
 
-The  EvolvingTux splash  screen was  modified by  Filip  Van Raemdonck
-<mechanix@debian.org>    based    on    a    GPL   work    found    at
-http://www.kde-look.org.
 
-The  debian-security.xcf  file  (and  the resulting  .png  file)  were
-created by Colin Walters <walters@debian.org> from the Debian Open Use
-Logo and a GNOME icon; both are free software.
-
-The  debian-official-logo-small.png image  is  more or  less a  simple
-reformatting of the Debian Official Use Logo.
+The debian-security.xcf file (and the resulting .png file) are
+Copyright Ulrich Hansen <uhansen@mainz-online.de>, Mainz, Germany, 2010,
+published under GPL2 or higher (at your option)
+They are based on the Debian “Open Use” (without “Debian” word) logo.
 
 The .desktop  files included  in this package  were compiled  by Colin
 Walters <walters@debian.org>.
-
-The gnome-debian-sid "kit" including splash/gnome-debian-sid-splash.xcf.gz, 
-splash/gnome-debian-sid-splash.png, wallpapers/gnome-debian-sid-wp.xcf.gz
-and wallpapers/gnome-debian-sid-wp.png were made by Josselin Mouette 
-<joss@debian.org> and Gustavo Franco <stratus@debian.org>.
 
 The following files are Copyright 2006 André Luiz Rodrigues Ferreira and
 licensed under the GPL.
     - SVG background, backgrounds/debian-blueish-wallpaper.svg.
     - PNG splash, splash/gnome-splash-curves.png.
+They are both based on the Debian “Open Use” (without “Debian” word) logo.
+
+The Joy theme is © 2012 Adrien Aubourg and released under the GPLv2
+license.
+
+The Joy theme is based on the Debian “Open Use” (without “Debian” word)
+logo.
+
+The Joy plymouth script is Copyright © 2009 Canonical Ltd.,
+Copyright © 2010 Aurélien COUDERC and Copyright © 2012 Jonathan Carter under
+the GPLv2+.
+
+The images used with the plymouth theme is Copyright © 2012 Adrien Aubourg under
+the GPLv2 License.
+
+The Joy GDM is © 2012 Paul Tagliamonte GPLv2, with work
+from all the previous authors of that file, and artwork from Adrien Aubourg under
+the GPLv2 license.
+
+The Joy KDM  theme is © 2012 Eshat Cakar and © 2010 Roman Shtylman GPLv2
+with artwork from Adrien Aubourg under the GPLv2 license.
+
+The Joy KSplash theme is © 2012 Eshat Cakar, Nuno Pinheiro, Riccardo Iaconelli GPLv2
+with artwork from Adrien Aubourg under the GPLv2 license.
+
+The Joy grub theme is © 2012 Paul Tagliamonte GPLv2, using artwork from Adrien
+Aubourg licensed under GPLv2 license.
 
 The SpaceFun theme is © 2010 Valessio S. Brito and released under the GPLv2.
-KDM and Splashy themes are © 2010 Yves-Alexis Perez using artwork from Valessio
+The Splashy theme is © 2010 Yves-Alexis Perez using artwork from Valessio
 S. Brito, and are released under GPLv2.
 
-Spacefun plymouth theme is © 2010 Aurelien Couderc and released under the GPLv3 license, using artwork from Valessio S. Brito.
+Spacefun plymouth theme is © 2010 Aurelien Couderc and released under the GPLv3
+license, using artwork from Valessio S. Brito.
+
+The SpaceFun theme is based on the Debian “Open Use” (without “Debian” word)
+logo.
+
+Nightly theme (nightly-splash.png, nightly-wallpaper.png and nightly.xml) is ©
+2008 Robert Jähne and released under the GPLv2. It is based on the Debian “Open
+Use” (without “Debian” word) logo, and also on the GNOME foot Logo, which
+is released under the LGPL v2.1 or later, as stated in
+http://commons.wikimedia.org/w/index.php?title=File:Gnomelogo.svg&oldid=39892275
+
+Moreblue Orbit theme (moreblue-orbit-splash, moreblue-orbit-grub and
+moreblue-orbit-wallpaper) is © 2008 Andre Ferreira and released under the
+GPLv2. It is based on the Debian “Open Use” (without “Debian” word) logo.
+The GDM theme authors are Andre Ferreira, Fathi Boudra and Valessio S. Brito.
+
+emblems/emblem-debian.png is a miniaturized version of the Debian “Open Use”
+(without “Debian” word) logo.
 
 The GPL license (version 2) can be found in plain text format, on Debian
 systems, at /usr/share/common-licenses/GPL-2
 
 The GPL license (version 3) can be found in plain text format, on Debian
 systems, at /usr/share/common-licenses/GPL-3
+
+The LGPL license (version 2.1) can be found in plain text format, on Debian
+systems, at /usr/share/common-licenses/LGPL-2.1

@@ -1,13 +1,16 @@
 #!/usr/bin/make -f
 
-%:
-	dh ${@}
+include /usr/share/cdbs/1/rules/buildcore.mk
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/makefile.mk
 
-override_dh_auto_build:
-	$(MAKE) build
+DEB_DH_BUILDDEB_ARGS = -- -Zxz
 
-override_dh_auto_install:
-	$(MAKE) DESTDIR=$(CURDIR)/debian/desktop-base install
+# needed for usplash
+CFLAGS += -fPIC
 
-override_dh_gconf:
+DEB_MAKE_INSTALL_TARGET := install DESTDIR=$(CURDIR)/debian/desktop-base/
+
+binary-fixup/desktop-base::
 	dh_gconf --priority=15
+

@@ -1,3 +1,131 @@
+desktop-base (7.0.3Canaima1) unstable; urgency=low
+
+  [ Eshat Cakar ]
+  * Fixed various glitches in the KDM Theme:
+    - Make pam error messages actually visible.
+    - Don't cut off the last hostname letter.
+    - Adjust font sizes and colors.
+  * Ksplash: don't cut off blurred icons.
+  * Reduce opacity of debian swirl in gdm/kdm background to be
+    less distracting.
+
+  [ Paul Tagliamonte ]
+  * debian/rules: Use xz compression for binary packages. (Closes: #683903)
+    - Thanks to Ansgar Burchardt <ansgar@debian.org> for the patch & bug.
+
+  [ Jonathan Carter ]
+  * Update joy theme to feature a themed password prompt.
+
+ -- Paul Tagliamonte <paultag@debian.org>  Wed, 22 Aug 2012 20:19:11 -0400
+
+desktop-base (7.0.2) unstable; urgency=low
+
+  * Droped the ${misc:Depends}, as Yves-Alexis pointed out, it drags in dconf
+    without a reason.
+
+ -- Paul Tagliamonte <paultag@debian.org>  Mon, 30 Jul 2012 19:43:20 -0400
+
+desktop-base (7.0.1) unstable; urgency=low
+
+  [ Eshat Cakar ]
+  * Make 1366x768 ksplash background really that resolution. (Closes: #679306)
+  * Fix typo in plymouth theme. (Closes: #679357)
+  * Updated ink-splated kde wallpaper, to fix alignment issues.
+
+  [ Paul Tagliamonte ]
+  * Add ${misc:Depends} to the Depends for the binary package. We're using
+    debhelper, so we should behave nicely.
+  * Updated GDM & KDM's login background to have branding in the lower-right.
+  * Inverting the GRUB highlight colors. This helps those who might be hard
+    of sight, or think it's generally hard to see. (Closes: #680505)
+
+ -- Paul Tagliamonte <paultag@debian.org>  Mon, 09 Jul 2012 20:24:40 -0400
+
+desktop-base (7.0.0) unstable; urgency=low
+
+  [ Eshat Cakar ]
+  * Updated the KDM theme.
+  * Updated the ksplash theme.
+  * Install Joy wallpapers into /usr/share/wallpapers/
+    This makes them visibile in KDE's wallpaper chooser
+  * Set default wallpaper for new users via plasma scripting
+
+  [ Paul Tagliamonte ]
+  * Added joy-inksplat into gnome-backgrounds.xml (Closes: #678937),
+    thanks, Fabian!
+  * Small rewrite of problematic debian/copyright lines (Closes: #678746),
+    thanks, Francesco!
+    - This rewrite also included the change of license from Adrien to GPLv2
+      from CC-BY-SA 3.0.
+
+ -- Eshat Cakar <info@eshat.de>  Mon, 25 Jun 2012 10:44:07 -0400
+
+desktop-base (7.0.0~exp2) experimental; urgency=low
+
+  * Remove GConf defaults, they are not used anymore.
+  * Remove the GDM3 settings, since the configuration format for GDM
+    change again, yay.
+  * Add a dconf file for the new-style GDM3 configuration.
+  * Add a XML file describing the available resolutions for the
+    background (for use with GNOME).
+  * postinst: use a higher priority for the 1920x1080 background.
+  * Cleanup postinst/prerm/postrm.
+  * Add a new alternative: desktop-background.xml.
+  * Use it from the gsettings override.
+  * Reload gdm3 after installation/removal.
+  * Drop old libgnome2-common hack.
+  * Clean up an alternative that is no longer available.
+
+ -- Josselin Mouette <joss@debian.org>  Sat, 23 Jun 2012 23:28:15 +0200
+
+desktop-base (7.0.0~exp1) experimental; urgency=low
+
+  [ Paul Tagliamonte ]
+  * Adding myself as a maintainer
+  * We've got a new theme -- `joy' by Adrien Aubourg. Thanks, Adrien!
+     - Theme added to backgrounds.
+     - Theme added for Grub
+     - Background changed for GDM3
+     - Theme added for KDM & changed that to default.
+     - Theme added for ksplash & changed to default.
+  * Standards bump to 3.9.3
+  * Pre-Dependency added for dpkg (>= 1.15.7.2~), since we use dpkg helpers
+    in our preinst.
+  * Add in Jonathan Carter's Plymouth theme.
+
+  [ Jonathan Carter ]
+  * Remove splashy theme since it's no longer available in archives
+
+  [ Yves-Alexis Perez ]
+  * Install emblem in the correct folder.
+
+ -- Paul Tagliamonte <paultag@ubuntu.com>  Sat, 23 Jun 2012 13:00:47 +0200
+
+desktop-base (6.0.7) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * Build-depend on recent cdbs+debhelper to have dh_installgsettings.
+  * debian/gsettings-override: set the default background using 
+    GSettings.
+  * xy_desktop-base.gschema.override: configure the default background 
+    for gdm3 using GSettings as well.
+  * All of this closes: #623094.
+  * Add myself to uploaders.
+
+  [ Yves-Alexis Perez ]
+  * debian/control:
+    - update standards version to 3.9.2.
+
+ -- Josselin Mouette <joss@debian.org>  Fri, 14 Oct 2011 21:43:14 +0200
+
+desktop-base (6.0.6) unstable; urgency=low
+
+  * plymouth/spacefun:
+    - fix script for dual screen.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 19 Feb 2011 19:29:07 +0100
+
+
 desktop-base (6.0.6-1canaima11) stable; urgency=low
 
   * [aec30e4] Removiendo algunos fondos de pantalla para disminuir el

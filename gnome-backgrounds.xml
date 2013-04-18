@@ -2,48 +2,56 @@
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
   <wallpaper>
-    <name>CanaimaFondoMusgo2</name>
-    <filename>/usr/share/images/desktop-base/canaima-fondo-musgo-2.png</filename>
+    <name>CanaimaFondo</name>
+    <filename>/usr/share/images/desktop-base/background.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaSelvaVectorialBohemio</name>
-    <filename>/usr/share/images/desktop-base/canaima-selva-vectorial-bohemio.png</filename>
+    <name>Descanso</name>
+    <filename>/usr/share/images/desktop-base/descanso.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaCordillera</name>
-    <filename>/usr/share/images/desktop-base/canaima-cordillera.png</filename>
+    <name>RonaldUzcategui</name>
+    <filename>/usr/share/images/desktop-base/Fondo-Canaima-RonaldUzcategui.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaVectoresPasteles1</name>
-    <filename>/usr/share/images/desktop-base/canaima-vectores-pasteles-1.png</filename>
+    <name>SaltoCanaima</name>
+    <filename>/usr/share/images/desktop-base/wallpaper4.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaVectoresPasteles2</name>
-    <filename>/usr/share/images/desktop-base/canaima-vectores-pasteles-2.png</filename>
+    <name>IslaZapara</name>
+    <filename>/usr/share/images/desktop-base/IslaZapara.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>CanaimaVectoresPasteles3</name>
-    <filename>/usr/share/images/desktop-base/canaima-vectores-pasteles-3.png</filename>
+    <name>CanaimaVectores</name>
+    <filename>/usr/share/images/desktop-base/wallpaper2.png</filename>
+    <options>zoom</options>
+    <shade_type>horizontal-gradient</shade_type>
+    <pcolor>#282928</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+<wallpaper>
+    <name>Turpial</name>
+    <filename>/usr/share/images/desktop-base/wallpaper3.png</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#282928</pcolor>
