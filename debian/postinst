@@ -19,17 +19,14 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
             desktop-background \
             /usr/share/images/desktop-base/$background $priority
     done << EOF
-joy-wallpaper_1600x1200.svg 65
-joy-wallpaper_1280x1024.svg 65
-joy-wallpaper_1920x1080.svg 70
-joy-wallpaper_1920x1200.svg 65
-joy-inksplat-wallpaper_1920x1080.svg 65
-spacefun-wallpaper.svg 60
-spacefun-wallpaper-widescreen.svg  55
-moreblue-orbit-wallpaper.svg 50
-moreblue-orbit-wallpaper-widescreen.svg 50
-nightly-wallpaper.png 40
-debian-blueish-wallpaper.svg 30
+background.png 70
+Fondo-Canaima-RonaldUzcategui.png 65
+descanso.png 60
+IslaZapara.png 55
+wallpaper2.png 50
+wallpaper3.png 45
+wallpaper4.png  40
+
 EOF
 
     # Set up an alternative for the XML version of the background
@@ -58,6 +55,7 @@ EOF
             desktop-grub \
             /usr/share/images/desktop-base/$background $priority
     done << EOF
+background.svg 25
 joy-grub.png 20
 spacefun-grub.png 15
 spacefun-grub-widescreen.png 14
