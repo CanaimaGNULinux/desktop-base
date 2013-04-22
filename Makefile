@@ -1,23 +1,27 @@
 DEFAULT_BACKGROUND=desktop-background
 
 INSTALL=install -m 0644
-BACKGROUNDS=$(wildcard backgrounds/*.png backgrounds/*.jpg backgrounds/*.svg backgrounds/*.tga backgrounds/*.xml)
+BACKGROUNDS=$(wildcard backgrounds/*.png)
 EMBLEMS=$(wildcard emblems/*png emblems/*icon)
-SPLASH=$(wildcard splash/*.png splash/*.svg)
+SPLASH=$(wildcard splash/*.png)
 PIXMAPS=$(wildcard pixmaps/*.png)
 DESKTOPFILES=$(wildcard *.desktop)
+SVGS=$(wildcard backgrounds/*.svg splash/*.svg gdm3/*.svg grub/*.svg)
+PNGS=$(shell echo $(SVGS) | sed 's/.svg/.png/g' )
+NAMES=$(shell echo $(SVGS) | sed 's/.svg//g' )
 
-@printf "Generando imágenes desde las fuentes [SVG > PNG] ["	@printf "Generando imágenes desde las fuentes [SVG > PNG] ["
-@for IMAGE in $(NAMES); do \	@for IMAGE in $(NAMES); do \
-convert $${IMAGE}.svg $${IMAGE}.png; \	
-	convert -background None $${IMAGE}.svg $${IMAGE}.png; \
-printf "."; \	printf "."; \
-done
-@printf "]\n"
+all: build
 
-all:
+build:
+	@printf "Generando imágenes desde las fuentes [SVG > PNG] ["
+	@for IMAGE in $(NAMES); do \
+		convert -background None $${IMAGE}.svg $${IMAGE}.png; \
+		printf "."; \
+	done
+	@printf "]\n"
 
 clean:
+	rm -rf $(PNGS)
 
 install:
 	# background files

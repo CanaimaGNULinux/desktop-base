@@ -20,13 +20,12 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
             /usr/share/images/desktop-base/$background $priority
     done << EOF
 background.png 70
-Fondo-Canaima-RonaldUzcategui.png 65
+RonaldUzcategui.png 65
 descanso.png 60
 IslaZapara.png 55
 wallpaper2.png 50
 wallpaper3.png 45
-wallpaper4.png  40
-
+wallpaper4.png 40
 EOF
 
     # Set up an alternative for the XML version of the background
@@ -55,7 +54,7 @@ EOF
             desktop-grub \
             /usr/share/images/desktop-base/$background $priority
     done << EOF
-background.svg 25
+background.png 25
 joy-grub.png 20
 spacefun-grub.png 15
 spacefun-grub-widescreen.png 14
