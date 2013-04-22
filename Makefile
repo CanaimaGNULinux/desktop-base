@@ -7,6 +7,14 @@ SPLASH=$(wildcard splash/*.png splash/*.svg)
 PIXMAPS=$(wildcard pixmaps/*.png)
 DESKTOPFILES=$(wildcard *.desktop)
 
+@printf "Generando imágenes desde las fuentes [SVG > PNG] ["	@printf "Generando imágenes desde las fuentes [SVG > PNG] ["
+@for IMAGE in $(NAMES); do \	@for IMAGE in $(NAMES); do \
+convert $${IMAGE}.svg $${IMAGE}.png; \	
+	convert -background None $${IMAGE}.svg $${IMAGE}.png; \
+printf "."; \	printf "."; \
+done	done
+@printf "]\n"
+
 all:
 
 clean:
