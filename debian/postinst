@@ -28,8 +28,7 @@ wallpaper3.png 45
 wallpaper4.png 40
 EOF
 
-    # Set up an alternative for the XML version of the background
-    # (for GNOME)
+ # Set up an alternative for the XML version of the background # (for GNOME)
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background.xml \
         desktop-background.xml \
@@ -42,7 +41,7 @@ EOF
             desktop-splash \
             /usr/share/images/desktop-base/$splash $priority
     done << EOF
-spacefun-splash.svg 50
+spacefun-splash.png 50
 moreblue-orbit-splash.png 40
 gnome-splash-curves.png 30
 EOF

@@ -1,0 +1,18 @@
+Package: desktop-base
+Version: 7.0.3Canaima1
+Architecture: all
+Maintainer: Equipo de Desarrollo de Canaima GNU/Linux <desarrolladores@canaima.softwarelibre.gob.ve>
+Installed-Size: 41715
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Depends: librsvg2-common
+Suggests: gnome | kde-standard | xfce4 | wmaker
+Section: x11
+Priority: optional
+Homepage: http://canaima.softwarelibre.gob.ve/
+Description: common files for the Debian Desktop
+ This package contains various miscellaneous files which are used by
+ Debian Desktop installations.  Currently, it provides some
+ Debian-related artwork and themes, .desktop files containing links to
+ Debian related material (suitable for placement on a user's desktop),
+ and other common files between the available desktop environments
+ such as GNOME and KDE.

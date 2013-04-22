@@ -1,7 +1,7 @@
 DEFAULT_BACKGROUND=desktop-background
 
 INSTALL=install -m 0644
-BACKGROUNDS=$(wildcard backgrounds/*.png)
+BACKGROUNDS=$(wildcard backgrounds/*.png backgrounds/*.jpg backgrounds/*.svg backgrounds/*.tga backgrounds/*.xml)
 EMBLEMS=$(wildcard emblems/*png emblems/*icon)
 SPLASH=$(wildcard splash/*.png)
 PIXMAPS=$(wildcard pixmaps/*.png)
@@ -103,7 +103,11 @@ install:
 	$(INSTALL) gdm3/10-desktop-base-settings $(DESTDIR)/usr/share/gdm/dconf/
 
 	# grub
-	$(INSTALL) grub/background.svg $(DESTDIR)/usr/share/images/desktop-base/
+	$(INSTALL) grub/background.png $(DESTDIR)/usr/share/images/desktop-base/
+	$(INSTALL) grub/joy-grub.png $(DESTDIR)/usr/share/images/desktop-base/
+	$(INSTALL) grub/spacefun-grub.png $(DESTDIR)/usr/share/images/desktop-base/
+	$(INSTALL) grub/spacefun-grub-widescreen.png $(DESTDIR)/usr/share/images/desktop-base/
+	$(INSTALL) grub/grub_background.sh $(DESTDIR)/usr/share/desktop-base/
 
 	# plymouth
 	install -d $(DESTDIR)/usr/share/plymouth/themes/spacefun
