@@ -12,7 +12,7 @@ DESKTOPFILES=$(wildcard *.desktop)
 convert $${IMAGE}.svg $${IMAGE}.png; \	
 	convert -background None $${IMAGE}.svg $${IMAGE}.png; \
 printf "."; \	printf "."; \
-done	done
+done
 @printf "]\n"
 
 all:
