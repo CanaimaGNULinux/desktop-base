@@ -1,4 +1,4 @@
-desktop-base (7.0.3Canaima1) unstable; urgency=low
+desktop-base (7.0.3) unstable; urgency=low
 
   [ Eshat Cakar ]
   * Fixed various glitches in the KDM Theme:
@@ -125,85 +125,54 @@ desktop-base (6.0.6) unstable; urgency=low
 
  -- Yves-Alexis Perez <corsac@debian.org>  Sat, 19 Feb 2011 19:29:07 +0100
 
+desktop-base (6.0.5) unstable; urgency=low
 
-desktop-base (6.0.6-1canaima11) stable; urgency=low
+  * gnome-backgrounds.xml: rename wallpaper to not display the release name at
+    all.                                                        closes: #607101
+  * debian/copyright updated, thanks to Francesco Poli.         closes: #607458
+  * debian-desktop-logo.png dropped, its' not installed anywhere anyway.
+  * source/spacefun/splash updated to the DFSG-free version.    closes: #587668
+  * usplash theme dropped, wasn't installed anyway.
+  * debian/post{inst,rm}: don't configure plymouth theme, it'll override user
+    settings. A better solution needs to be found for Wheezy    closes: #607142
+  * debian/README.Debian: indicate how to enable plymouth theme.
+  * drop all gnome-debian-sid artwork.
+  * pixmaps/debian-security.png updated, thanks to Ulrich Hansen.
 
-  * [aec30e4] Removiendo algunos fondos de pantalla para disminuir el
-    peso de la ISO.
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 21 Dec 2010 22:05:48 +0100
 
- -- Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>  Sat, 07 Jul 2012 02:03:31 -0430
+desktop-base (6.0.4) unstable; urgency=low
 
-desktop-base (6.0.6-1canaima10) stable; urgency=low
+  * plymouth/spacefun:
+    - update logo from Aurélien Couderc.
+  * splash:
+    - update svg to use path instead of font.
+  * debian/control:
+    - drop depends on ttf-sil-andika.
 
-  * [69fc55a] Agregando background None a Makefile para permitir
-    transparencia en los fondos
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 14 Dec 2010 08:47:00 +0100
 
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 28 Dec 2011 14:40:08 -0430
+desktop-base (6.0.3) unstable; urgency=low
 
-desktop-base (6.0.6-1canaima9) stable; urgency=low
+  * profiles/kde-profiles:
+    - drop dir_wallpaper to not clutter KDE wallpaper chooser.  closes: #605116
+  * debian/prerm:
+    - remove desktop-splash spacefun alternative.               closes: #605239
+  * profiles/[...]/xfce4-desktop.xml:
+    - don't set image-style property, default to auto.          closes: #523150
+  * cleanup debian/copyright for removed stuff.                 closes: #594533
+  * debian/pixmaps:
+    - debian-security updated, thanks to Ulrich Hansen.         closes: #389155 
+  * DFSG-ify artwork:                                           closes: #587668
+    - various themes, thanks to Ulrich Hansen.
+    - SpaceFun theme, thanks to Valessio Brito.
+  * debian/control:
+    - depends on ttf-sil-andika since SpaceFun theme uses it in svg files.
 
-  * [a6aab48] Agregando lxde a los recommends.
-
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 28 Dec 2011 10:17:18 -0430
-
-desktop-base (6.0.5+canaima8) unstable; urgency=low
-
-  * [27b8b48] Removiendo fondos duplicados, modificando el XML que lista
-    los fondos en el diálogo de gnome, depurando Makefile y postinst
-
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 09 Mar 2011 21:10:07 -0430
-
-desktop-base (6.0.5+canaima7) unstable; urgency=low
-
-  * [606cf5f] Agregando nuevos fondos de pantalla
-
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 04 Mar 2011 10:35:11 -0430
-
-desktop-base (6.0.5+canaima6) unstable; urgency=low
-
-  * [3c8e74b] Quitando XCF's, dejando los SVG's (pesan mucho)
-
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Thu, 10 Feb 2011 00:37:00 -0430
-
-desktop-base (6.0.5+canaima5) unstable; urgency=low
-
-  * [cdf48b2] Agregando fondos portados desde canaima-estilo-visual
-
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Mon, 07 Feb 2011 16:23:57 -0430
-
-desktop-base (6.0.5+canaima4) unstable; urgency=low
-
-  * [872209d] Borrando innecesarios
-
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Mon, 24 Jan 2011 16:48:27 -0430
-
-desktop-base (6.0.2+canaima3) unstable; urgency=low
-
-  * [8c3059e] El burro volviendo a cometer el mismo error
-
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Thu, 23 Dec 2010 12:42:36 -0430
-
-desktop-base (6.0.2+canaima2) unstable; urgency=low
-
-  * [b4a79b0] OOps! se nos olvidó mover una imagen en el Makefile
-
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Thu, 23 Dec 2010 12:16:00 -0430
-
-desktop-base (6.0.2+canaima1) unstable; urgency=low
-
-  * [fca342a] Corrigiendo extensión de archivo
-
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Thu, 16 Dec 2010 20:55:53 -0430
-
-desktop-base (6.0.2+canaima0) unstable; urgency=low
-
-  * [392e2b6] Incluyendo imágenes de Canaima GNU/Linux
-
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 15 Dec 2010 04:36:29 -0430
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 12 Dec 2010 11:51:48 +0100
 
 desktop-base (6.0.2) unstable; urgency=low
 
-  [ Yves-Alexis Perez ]
   * ksplash/spacefun/Theme.rc:
     - revert name change, it should follow directory name.
   * splashy/spacefun:
@@ -217,7 +186,7 @@ desktop-base (6.0.2) unstable; urgency=low
   * debian/post{inst,rm}: configure plymouth theme if plymouth is installed.
   * debian/copyright updated for plymouth theme.
 
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 15 Dec 2010 04:35:45 -0430
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 27 Nov 2010 15:58:09 +0100
 
 desktop-base (6.0.1) unstable; urgency=low
 

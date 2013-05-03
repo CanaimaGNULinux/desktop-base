@@ -1,10 +1,9 @@
 Source: desktop-base
 Section: x11
 Priority: optional
-Maintainer: Equipo de Desarrollo de Canaima GNU/Linux <desarrolladores@canaima.softwarelibre.gob.ve>
-Uploaders: Sasha Veronica Solano Grosjean <sashasolano@gmail.com>
-Build-Depends: debhelper (>= 7.0.50~), imagemagick, libmagickcore-extra | libmagickcore3-extra | libmagickcore4-extra
-Standards-Version: 3.9.1
+Maintainer: Sasha Veronica Solano Grosjean <sashasolano@gmail.com>
+Build-Depends: debhelper (>= 9), imagemagick, libmagickcore-extra | libmagickcore3-extra | libmagickcore4-extra
+Standards-Version: 3.9.3
 Homepage: http://canaima.softwarelibre.gob.ve/
 Vcs-Git: git://gitorious.org/canaima-gnu-linux/desktop-base.git
 Vcs-Browser: http://gitorious.org/canaima-gnu-linux/desktop-base/trees/master
@@ -21,13 +20,3 @@ Description: common files for the Debian Desktop
  Debian related material (suitable for placement on a user's desktop),
  and other common files between the available desktop environments
  such as GNOME and KDE.
-
-#Package: usplash-theme-debian-desktop
-#Section: misc
-#Architecture: amd64 i386 powerpc sparc
-#Depends: ${shlibs:Depends}, usplash
-#Provides: usplash-theme
-#Description: Debian Desktop usplash theme
-# This package contains an usplash theme based on Debian Desktop project.
-# .
-# See http://wiki.debian.org/DebianDesktopArtwork for more details.
