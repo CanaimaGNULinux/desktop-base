@@ -1,0 +1,10 @@
+[Plymouth Theme]
+Name=canaima-plymouth
+Description=Tema de Plymouth para Canaima GNU/Linux
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/canaima-plymouth
+ScriptFile=/usr/share/plymouth/themes/canaima-plymouth/canaima-plymouth.script
+
+
