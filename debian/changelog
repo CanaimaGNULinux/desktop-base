@@ -1,5 +1,7 @@
 desktop-base (7.0.3Canaima1) unstable; urgency=low
 
+  * [a31ea58] Corrigiendo compilación de secuencia de imágenes a partir
+    de blender.
   * [26884de] Corrigiendo generación del enlace simbólico a desktop-
     background.
   * [6c4ac6b] Agregando archivos para el tema plymouth "Gnamon".
