@@ -1,3 +1,24 @@
+desktop-base (7.0.3Canaima1) unstable; urgency=low
+
+  * [6c4ac6b] Agregando archivos para el tema plymouth "Gnamon".
+  * [dd44752] Estandarizando nombres de archivos para los wallpapers de la
+    carpeta "./backgrounds". Realizando ligera modificación de estilo al
+    wallpaper por defecto "./backgrounds/minimal.svg". Modificando lista
+    xml de wallpapers por defecto.
+  * [f163843] Modificando rutina del Makefile para añadir el tema de
+    Plymouth. Modificando dependencias de compilación para el
+    procedimiento de compilación de imágenes para el tema Plymouth.
+    Ajustando scripts del mantenedor para los nuevos nombres de archivos.
+    Migrando debian/rules a debhelper.
+  * [78fbbb9] Estandarizando nombre del tema para el grub. Cambiando lista
+    xml para gnome-backgrounds de acuerdo a los nuevos nombres de archivo.
+    Mejorando las opciones dconf para gdm3.
+  * [019dbfe] Removiendo wallpapers viejos. Renombrando configuraciones de
+    dconf para gdm3 para asegurar su aplicación sobre las demás.
+    Modificando fondo para el plymouth.
+
+ -- Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>  Mon, 06 May 2013 17:40:03 -0430
+
 desktop-base (7.0.3) unstable; urgency=low
 
   [ Eshat Cakar ]
