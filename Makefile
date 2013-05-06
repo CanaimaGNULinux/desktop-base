@@ -42,7 +42,7 @@ install:
 	# GDM 3 theme
 	mkdir -p $(DESTDIR)/usr/share/gdm/dconf
 	$(INSTALL) gdm3/login-background.png $(DESTDIR)/usr/share/images/desktop-base
-	$(INSTALL) gdm3/10-desktop-base-settings $(DESTDIR)/usr/share/gdm/dconf
+	$(INSTALL) gdm3/99-desktop-base-settings $(DESTDIR)/usr/share/gdm/dconf
 
 	# grub
 	$(INSTALL) grub/grub.png $(DESTDIR)/usr/share/images/desktop-base

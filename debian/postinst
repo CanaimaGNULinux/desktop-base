@@ -96,7 +96,6 @@ EOF
         /usr/share/images/desktop-base/canaima.xml 70
 
     # Alternatives for grub
-
 	update-alternatives --install \
 		/usr/share/images/desktop-base/desktop-grub.png \
 		desktop-grub \
