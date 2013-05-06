@@ -2,7 +2,7 @@ Source: desktop-base
 Section: x11
 Priority: optional
 Maintainer: Sasha Veronica Solano Grosjean <sashasolano@gmail.com>
-Build-Depends: debhelper (>= 9), imagemagick, libmagickcore-extra | libmagickcore3-extra | libmagickcore4-extra
+Build-Depends: debhelper (>= 9), imagemagick, libmagickcore-extra, blender
 Standards-Version: 3.9.3
 Homepage: http://canaima.softwarelibre.gob.ve/
 Vcs-Git: git://gitorious.org/canaima-gnu-linux/desktop-base.git
@@ -10,8 +10,8 @@ Vcs-Browser: http://gitorious.org/canaima-gnu-linux/desktop-base/trees/master
 
 Package: desktop-base
 Architecture: all
-Depends: librsvg2-common
-Pre-Depends: dpkg (>= 1.15.7.2~)
+Depends: librsvg2-common, ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: dpkg (>= 1.15.7.2~), pciutils, initramfs-tools, plymouth-drm
 Suggests: gnome | kde-standard | xfce4 | wmaker
 Description: common files for the Debian Desktop
  This package contains various miscellaneous files which are used by
