@@ -45,6 +45,7 @@ install:
 	@$(INSTALL) gdm3/99-desktop-base-settings $(DESTDIR)/usr/share/gdm/dconf
 
 	# grub
+	@mkdir -p $(DESTDIR)/usr/share/desktop-base
 	@$(INSTALL) grub/grub.png $(DESTDIR)/usr/share/images/desktop-base
 	@$(INSTALL) grub/grub_background.sh $(DESTDIR)/usr/share/desktop-base
 
