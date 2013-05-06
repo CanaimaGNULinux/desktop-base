@@ -1,5 +1,7 @@
 desktop-base (7.0.3Canaima1) unstable; urgency=low
 
+  * [26884de] Corrigiendo generación del enlace simbólico a desktop-
+    background.
   * [6c4ac6b] Agregando archivos para el tema plymouth "Gnamon".
   * [dd44752] Estandarizando nombres de archivos para los wallpapers de la
     carpeta "./backgrounds". Realizando ligera modificación de estilo al
