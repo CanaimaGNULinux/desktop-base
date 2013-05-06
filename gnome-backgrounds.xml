@@ -2,20 +2,38 @@
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
   <wallpaper>
-    <!-- don't include words such as "wallpaper" (avoids translations) -->
-    <name>Debian</name>
-    <filename>/usr/share/images/desktop-base/joy.xml</filename>
+    <name>Minimal</name>
+    <filename>/usr/share/images/desktop-base/minimal.png</filename>
     <options>zoom</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>#0099cc</pcolor>
-    <scolor>#006699</scolor>
   </wallpaper>
   <wallpaper>
-    <name>Debian Inksplat</name>
-    <filename>/usr/share/images/desktop-base/joy-inksplat-wallpaper_1920x1080.svg</filename>
+    <name>Minimal</name>
+    <filename>/usr/share/images/desktop-base/brillante.png</filename>
     <options>zoom</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>#0099cc</pcolor>
-    <scolor>#006699</scolor>
+  </wallpaper>
+  <wallpaper>
+    <name>Minimal</name>
+    <filename>/usr/share/images/desktop-base/cascada.png</filename>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper>
+    <name>Minimal</name>
+    <filename>/usr/share/images/desktop-base/descanso.png</filename>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper>
+    <name>Minimal</name>
+    <filename>/usr/share/images/desktop-base/islazapara.png</filename>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper>
+    <name>Minimal</name>
+    <filename>/usr/share/images/desktop-base/llanero.png</filename>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper>
+    <name>Minimal</name>
+    <filename>/usr/share/images/desktop-base/selva.png</filename>
+    <options>zoom</options>
   </wallpaper>
 </wallpapers>
