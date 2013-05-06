@@ -1,7 +1,7 @@
 # Makefile
 
 SHELL := sh -e
-
+DEFAULT_BACKGROUND=desktop-background
 INSTALL=install -m 0644
 SVGS=$(wildcard backgrounds/*.svg gdm3/*.svg grub/*.svg plymouth/*.svg)
 PNGS=$(shell echo $(SVGS) | sed 's/.svg/.png/g' )
@@ -32,8 +32,8 @@ install:
 	# background files
 	mkdir -p $(DESTDIR)/usr/share/images/desktop-base
 	$(INSTALL) $(wildcard backgrounds/*.png) $(DESTDIR)/usr/share/images/desktop-base
-	$(INSTALL) backgrounds/default $(DESTDIR)/usr/share/images/desktop-base
 	$(INSTALL) backgrounds/canaima.xml $(DESTDIR)/usr/share/images/desktop-base
+	cd $(DESTDIR)/usr/share/images/desktop-base && ln -s $(DEFAULT_BACKGROUND) default
 
 	# GNOME background descriptor
 	mkdir -p $(DESTDIR)/usr/share/gnome-background-properties
