@@ -18,38 +18,38 @@ build:
 	done
 	@printf "]\n"
 	@echo "Procesando animación de Blender ..."
-	@blender -b plymouth/progress.blend -o //D -s 00 -e 40 -a
+	@blender -b plymouth/Gnamon/progress.blend -o //D -s 00 -e 40 -a
 
 clean:
 
-	rm -rf $(PNGS)
-	rm -rf plymouth/D00*.png
-	rm -rf plymouth/logo*.png
-	rm -rf plymouth/fondo.png
+	@rm -rf $(PNGS)
+	@rm -rf plymouth/Gnamon/D00*.png
+	@rm -rf plymouth/Gnamon/logo*.png
+	@rm -rf plymouth/Gnamon/fondo.png
 
 install:
 
 	# background files
-	mkdir -p $(DESTDIR)/usr/share/images/desktop-base
-	$(INSTALL) $(wildcard backgrounds/*.png) $(DESTDIR)/usr/share/images/desktop-base
-	$(INSTALL) backgrounds/canaima.xml $(DESTDIR)/usr/share/images/desktop-base
-	cd $(DESTDIR)/usr/share/images/desktop-base && ln -s $(DEFAULT_BACKGROUND) default
+	@mkdir -p $(DESTDIR)/usr/share/images/desktop-base
+	@$(INSTALL) $(wildcard backgrounds/*.png) $(DESTDIR)/usr/share/images/desktop-base
+	@$(INSTALL) backgrounds/canaima.xml $(DESTDIR)/usr/share/images/desktop-base
+	@cd $(DESTDIR)/usr/share/images/desktop-base && ln -s $(DEFAULT_BACKGROUND) default
 
 	# GNOME background descriptor
-	mkdir -p $(DESTDIR)/usr/share/gnome-background-properties
-	$(INSTALL) gnome-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/debian.xml
+	@mkdir -p $(DESTDIR)/usr/share/gnome-background-properties
+	@$(INSTALL) gnome-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/debian.xml
 	
 	# GDM 3 theme
-	mkdir -p $(DESTDIR)/usr/share/gdm/dconf
-	$(INSTALL) gdm3/login-background.png $(DESTDIR)/usr/share/images/desktop-base
-	$(INSTALL) gdm3/99-desktop-base-settings $(DESTDIR)/usr/share/gdm/dconf
+	@mkdir -p $(DESTDIR)/usr/share/gdm/dconf
+	@$(INSTALL) gdm3/login-background.png $(DESTDIR)/usr/share/images/desktop-base
+	@$(INSTALL) gdm3/99-desktop-base-settings $(DESTDIR)/usr/share/gdm/dconf
 
 	# grub
-	$(INSTALL) grub/grub.png $(DESTDIR)/usr/share/images/desktop-base
-	$(INSTALL) grub/grub_background.sh $(DESTDIR)/usr/share/desktop-base
+	@$(INSTALL) grub/grub.png $(DESTDIR)/usr/share/images/desktop-base
+	@$(INSTALL) grub/grub_background.sh $(DESTDIR)/usr/share/desktop-base
 
 	# plymouth
-	mkdir -p $(DESTDIR)/usr/share/plymouth/themes/Gnamon
-	$(INSTALL) plymouth/*.png $(DESTDIR)/usr/share/plymouth/themes/Gnamon
-	$(INSTALL) plymouth/Gnamon.plymouth $(DESTDIR)/usr/share/plymouth/themes/Gnamon
-	$(INSTALL) plymouth/Gnamon.script $(DESTDIR)/usr/share/plymouth/themes/Gnamon
+	@mkdir -p $(DESTDIR)/usr/share/plymouth/themes/Gnamon
+	@$(INSTALL) plymouth/Gnamon/*.png $(DESTDIR)/usr/share/plymouth/themes/Gnamon
+	@$(INSTALL) plymouth/Gnamon/Gnamon.plymouth $(DESTDIR)/usr/share/plymouth/themes/Gnamon
+	@$(INSTALL) plymouth/Gnamon/Gnamon.script $(DESTDIR)/usr/share/plymouth/themes/Gnamon
