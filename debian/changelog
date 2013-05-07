@@ -1,5 +1,6 @@
 desktop-base (7.0.3Canaima1) unstable; urgency=low
 
+  * [3251abe] Corrigiendo error de generación de pngs en el Makefile.
   * [1dec56e] Corrigiendo creación de carpeta para desktop-base.
   * [a31ea58] Corrigiendo compilación de secuencia de imágenes a partir
     de blender.
