@@ -3,7 +3,7 @@
 SHELL := sh -e
 DEFAULT_BACKGROUND=desktop-background
 INSTALL=install -m 0644
-SVGS=$(wildcard backgrounds/*.svg gdm3/*.svg grub/*.svg plymouth/*.svg)
+SVGS=$(wildcard backgrounds/*.svg gdm3/*.svg grub/*.svg plymouth/Gnamon/*.svg)
 PNGS=$(shell echo $(SVGS) | sed 's/.svg/.png/g' )
 NAMES=$(shell echo $(SVGS) | sed 's/.svg//g' )
 
