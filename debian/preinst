@@ -26,27 +26,30 @@ EXITO() {
 
 case ${1} in
 
-	install|upgrade)
+	install)
+	;;
 
-	if dpkg --compare-versions ${2} lt 0.3.11 && dpkg --compare-versions ${2} gt 0.3.5; then
-		update-alternatives --remove gnome-splash \
-            /usr/share/images/desktop-base/Splash-Debian.png
-		update-alternatives --remove gnome-splash \
-            /usr/share/images/desktop-base/Splash-EvolvingTux.png
-		update-alternatives --remove gnome-splash \
-            /usr/share/images/desktop-base/Splash-Debian_red.png
-        dpkg-divert --package desktop-base --rename \
-            --divert /usr/share/pixmaps/splash/gnome-splash.png.orig \
-            --remove /usr/share/pixmaps/splash/gnome-splash.png
-    fi
+	upgrade)
 
-	if dpkg --compare-versions "$2" lt-nl 7; then
-		update-alternatives --remove desktop-grub /usr/share/images/desktop-base/moreblue-orbit-grub.png
-	fi
+		if dpkg --compare-versions ${2} lt 0.3.11 && dpkg --compare-versions ${2} gt 0.3.5; then
+			update-alternatives --remove gnome-splash \
+				/usr/share/images/desktop-base/Splash-Debian.png
+			update-alternatives --remove gnome-splash \
+				/usr/share/images/desktop-base/Splash-EvolvingTux.png
+			update-alternatives --remove gnome-splash \
+				/usr/share/images/desktop-base/Splash-Debian_red.png
+			dpkg-divert --package desktop-base --rename \
+				--divert /usr/share/pixmaps/splash/gnome-splash.png.orig \
+				--remove /usr/share/pixmaps/splash/gnome-splash.png
+		fi
+
+		if dpkg --compare-versions "$2" lt-nl 7; then
+			update-alternatives --remove desktop-grub /usr/share/images/desktop-base/moreblue-orbit-grub.png
+		fi
 	
-	if dpkg-maintscript-helper supports rm_conffile 2>/dev/null; then
-		dpkg-maintscript-helper rm_conffile /etc/kde3/kdeglobals 6.0.1 -- "$@"
-	fi
+		if dpkg-maintscript-helper supports rm_conffile 2>/dev/null; then
+			dpkg-maintscript-helper rm_conffile /etc/kde3/kdeglobals 6.0.1 -- "$@"
+		fi
 
 	;;
 
