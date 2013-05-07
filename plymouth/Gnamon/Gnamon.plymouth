@@ -1,10 +1,8 @@
 [Plymouth Theme]
-Name=canaima-plymouth
+Name=Gnamon
 Description=Tema de Plymouth para Canaima GNU/Linux
 ModuleName=script
 
 [script]
-ImageDir=/usr/share/plymouth/themes/canaima-plymouth
-ScriptFile=/usr/share/plymouth/themes/canaima-plymouth/canaima-plymouth.script
-
-
+ImageDir=/usr/share/plymouth/themes/Gnamon
+ScriptFile=/usr/share/plymouth/themes/Gnamon/Gnamon.script
