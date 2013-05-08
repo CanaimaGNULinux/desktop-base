@@ -1,3 +1,9 @@
+desktop-base (7.0.3Canaima3) kerepakupai; urgency=low
+
+  * [4a777fe] Corrigiendo llamado al preinst
+
+ -- Erick Birbe <erickcion@gmail.com>  Wed, 08 May 2013 09:43:34 -0430
+
 desktop-base (7.0.3Canaima2) kerepakupai; urgency=low
 
   * [2441f2a] Corrigiendo nombre de tema a Gnamon
