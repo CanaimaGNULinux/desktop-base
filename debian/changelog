@@ -1,3 +1,10 @@
+desktop-base (7.0.3Canaima3) kerepakupai; urgency=low
+
+  * [980384f] traduciendo el plymouth
+  * [dcfe39d] Borrando postinst~
+
+ -- Sasha Solano <sashasolano@gmail.com>  Thu, 29 Aug 2013 10:16:38 -0430
+
 desktop-base (7.0.3Canaima2) kerepakupai; urgency=low
 
   * [2441f2a] Corrigiendo nombre de tema a Gnamon
