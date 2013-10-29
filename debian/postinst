@@ -121,6 +121,18 @@ EOF
 		update-grub || true
 	fi
 
+    if [ -e /etc/init.d/plymouth ]; then
+
+        sed -i -e's/TEXT=\"Shutting down system...\"/TEXT=\"Hasta Luego , apagando el sistema...\"/g' /etc/init.d/plymouth
+
+    fi
+
+    if [ -e /etc/init.d/plymouth ]; then
+
+        sed -i -e's/TEXT=\"Restarting system...\"/TEXT=\"Reiniciando el sistema...\"/g' /etc/init.d/plymouth
+
+    fi
+
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
