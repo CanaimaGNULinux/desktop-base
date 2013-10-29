@@ -1,3 +1,9 @@
+desktop-base (7.0.3Canaima5) kerepakupai; urgency=low
+
+  * [b058a90] Corrigiendo imagen de Isla Zapara (tkt 796)
+
+ -- Erick Birbe <erickcion@gmail.com>  Tue, 29 Oct 2013 16:28:24 -0430
+
 desktop-base (7.0.3Canaima4) kerepakupai; urgency=low
 
   * [fa6ec74] Corrigiendo nombres de los fondos de pantalla, los cuales
