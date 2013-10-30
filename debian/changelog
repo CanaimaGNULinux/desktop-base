@@ -1,6 +1,12 @@
-desktop-base (7.0.3Canaima5) kerepakupai; urgency=low
+desktop-base (7.0.3Canaima6) kerepakupai; urgency=low
 
   * [b058a90] Corrigiendo imagen de Isla Zapara (tkt 796)
+
+ -- Erick Birbe <erickcion@gmail.com>  Wed, 30 Oct 2013 09:42:58 -0430
+
+desktop-base (7.0.3Canaima5) kerepakupai; urgency=low
+
+  * [a2ef7ac] Agregando traduccion al plymouth
 
  -- Erick Birbe <erickcion@gmail.com>  Tue, 29 Oct 2013 16:28:24 -0430
 
