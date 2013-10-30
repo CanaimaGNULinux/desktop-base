@@ -32,10 +32,10 @@ case ${1} in
 
     configure|'')
 
-	#if [ -e /etc/init.d/plymouth ]; then
-	#	sed -i 's/TEXT="Shutting down system..."/TEXT="Apagando el equipo..."/g' /etc/init.d/plymouth
-	#	sed -i 's/TEXT="Restarting system..."/TEXT="Reiniciando el equipo..."/g' /etc/init.d/plymouth
-	#fi
+	if [ -e /etc/init.d/plymouth ]; then
+		sed -i 's/TEXT="Shutting down system..."/TEXT="Apagando el equipo..."/g' /etc/init.d/plymouth
+		sed -i 's/TEXT="Restarting system..."/TEXT="Reiniciando el equipo..."/g' /etc/init.d/plymouth
+	fi
 
 	# Segun sea la marca de la tarjeta de video, se deben cargar diferentes modulos 
 	# mediante el archivo /etc/initramfs-tools/modules.
