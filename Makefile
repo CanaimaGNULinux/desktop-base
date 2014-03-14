@@ -19,6 +19,8 @@ build:
 	@printf "]\n"
 	@echo "Procesando animación de Blender ..."
 	@blender -b plymouth/Gnamon/progress.blend -o //D -s 00 -e 40 -a
+	@echo "Generando archivo gnome-backgrounds.xml ..."
+	@$(SHELL) build_gb.sh > gnome-backgrounds.xml
 
 clean:
 
@@ -32,6 +34,7 @@ install:
 	# background files
 	@mkdir -p $(DESTDIR)/usr/share/images/desktop-base
 	@$(INSTALL) $(wildcard backgrounds/*.png) $(DESTDIR)/usr/share/images/desktop-base
+	@$(INSTALL) $(wildcard backgrounds/*.jpg) $(DESTDIR)/usr/share/images/desktop-base
 	@$(INSTALL) backgrounds/canaima.xml $(DESTDIR)/usr/share/images/desktop-base
 	@cd $(DESTDIR)/usr/share/images/desktop-base && ln -s $(DEFAULT_BACKGROUND) default
 
