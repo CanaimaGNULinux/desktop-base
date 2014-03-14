@@ -1,3 +1,11 @@
+desktop-base (7.0.3Canaima7) kerepakupai; urgency=medium
+
+  * [a401de5] Cambiando los fondos para Canaima 4.1 Kerepakupai
+  * [43c64e9] Cambiando fondo predeterminado por el trompo
+  * [130a18c] Automatizando archivo gnome-backgrounds.xml
+
+ -- Erick Birbe <erickcion@gmail.com>  Fri, 14 Mar 2014 14:08:37 -0430
+
 desktop-base (7.0.3Canaima6) kerepakupai; urgency=low
 
   * [b058a90] Corrigiendo imagen de Isla Zapara (tkt 796)
