@@ -79,13 +79,11 @@ case ${1} in
             desktop-background \
             /usr/share/images/desktop-base/$background $priority
     done << EOF
-minimal.png 70
-brillante.png 60
-cascada.png 50
-descanso.png 40
-islazapara.png 30
-llanero.png 20
-selva.png 10
+01_trompo.jpg 50
+02_canaima.jpg 40
+03_guacamaya.jpg 30
+04_costa.jpg 20
+05_laguna.jpg 10
 EOF
 
     # Set up an alternative for the XML version of the background
