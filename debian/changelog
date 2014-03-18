@@ -1,3 +1,9 @@
+desktop-base (7.0.3Canaima8) kerepakupai; urgency=medium
+
+  * [c94e994] Actualizando update-alternatives para nuevos fondos
+
+ -- Erick Birbe <erickcion@gmail.com>  Tue, 18 Mar 2014 15:57:57 -0430
+
 desktop-base (7.0.3Canaima7) kerepakupai; urgency=medium
 
   * [a401de5] Cambiando los fondos para Canaima 4.1 Kerepakupai
