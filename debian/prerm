@@ -30,13 +30,11 @@ case ${1} in
 
 	    # remove background alternatives
 		for background in \
-			minimal.png \
-			brillante.png \
-			cascada.png \
-			descanso.png \
-			islazapara.png \
-			llanero.png \
-			selva.png \
+			01_trompo.jpg \
+			02_canaima.jpg \
+			03_guacamaya.jpg \
+			04_costa.jpg \
+			05_laguna.jpg \
 			; do
 			update-alternatives --remove desktop-background /usr/share/images/desktop-base/$background
 		done
