@@ -17,7 +17,7 @@ do
 	echo "  <wallpaper>
     <name>${name}</name>
     <filename>${filename}</filename>
-    <options>zoom</options>
+    <options>wallpaper</options>
   </wallpaper>"
 done
 
