@@ -4,7 +4,8 @@ BG_PATH_ORIG="backgrounds"
 BG_PATH_DEST="/usr/share/images/desktop-base"
 
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE wallpapers SYSTEM \"gnome-wp-list.dtd\">"
+<!DOCTYPE wallpapers SYSTEM \"gnome-wp-list.dtd\">
+<wallpapers>"
 
 find $BG_PATH_ORIG -iname *.jpg -o -iname *.png | while read F
 do
