@@ -1,3 +1,9 @@
+desktop-base (7.0.3Canaima10) kerepakupai; urgency=medium
+
+  * [be23a5a] Configurando fondos para rellenar pantalla
+
+ -- Erick Birbe <erickcion@gmail.com>  Wed, 19 Mar 2014 13:31:45 -0430
+
 desktop-base (7.0.3Canaima9) kerepakupai; urgency=medium
 
   * [7d910a8] Agregando nombre de fondos a la posti-nstalación
