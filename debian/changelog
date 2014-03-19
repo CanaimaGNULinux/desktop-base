@@ -1,3 +1,10 @@
+desktop-base (7.0.3Canaima9) kerepakupai; urgency=medium
+
+  * [7d910a8] Agregando nombre de fondos a la posti-nstalación
+  * [8a113b0] Corrigiendo xml de gnome-background
+
+ -- Erick Birbe <erickcion@gmail.com>  Wed, 19 Mar 2014 10:00:27 -0430
+
 desktop-base (7.0.3Canaima8) kerepakupai; urgency=medium
 
   * [c94e994] Actualizando update-alternatives para nuevos fondos
